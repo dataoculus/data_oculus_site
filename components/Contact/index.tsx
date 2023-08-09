@@ -161,16 +161,16 @@ const Contact = () => {
 
               <div className="mb-7 5">
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
-                  Our Loaction
+                  Location
                 </h4>
-                <p>290 Maryam Springs 260, Courbevoie, Paris, France</p>
+                <p>Palo Alto, California</p>
               </div>
               <div className="mb-7 5">
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
                   Email Address
                 </h4>
                 <p>
-                  <a href="#">yourmail@domainname.com</a>
+                  <a href="#">info@dataoculus.app</a>
                 </p>
               </div>
               <div>
@@ -178,7 +178,7 @@ const Contact = () => {
                   Phone Number
                 </h4>
                 <p>
-                  <a href="#">+009 42334 6343 843</a>
+                  <a href="#">+1 1234567890</a>
                 </p>
               </div>
             </motion.div>

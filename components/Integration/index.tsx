@@ -13,8 +13,8 @@ const Integration = () => {
           <SectionHeader
             headerInfo={{
               title: `INTEGRATIONS`,
-              subtitle: `Remotely Maintain Your Data, From Anywhere, Anytime.`,
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
+              subtitle: `100 % coverage on your data sources.`,
+              description: `Data Oculus integrates with all possible types of datastores to provide you best coverage on data observability.`,
             }}
           />
 

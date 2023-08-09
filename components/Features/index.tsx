@@ -15,9 +15,8 @@ const Feature = () => {
             headerInfo={{
               title: "PRODUCT FEATURES",
               subtitle: "Core Features of Data Oculus",
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.`,
+              description: `Data Oculus provides near Real-Time & Multi-facet Data Observability 
+              on All of your data as per everyone's Data Contracts in a most cost-effective way.`,
             }}
           />
           {/* <!-- Section Title End --> */}
