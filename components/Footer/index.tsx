@@ -30,24 +30,39 @@ const Footer = () => {
                 className="animate_top w-1/2 lg:w-1/4"
               >
                 <a href="index.html" className="relative">
+                  {/*<Image*/}
+                  {/*    width={110}*/}
+                  {/*    height={80}*/}
+                  {/*    src="/images/logo/dataoculus-logo-light.svg"*/}
+                  {/*    alt="Logo"*/}
+                  {/*    className="dark:hidden"*/}
+                  {/*/>*/}
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/logo-light.svg"
+                    src="/images/logo/logo-text-light.svg"
                     alt="Logo"
                     className="dark:hidden"
                   />
+                  {/*<Image*/}
+                  {/*    width={110}*/}
+                  {/*    height={80}*/}
+                  {/*    src="/images/logo/dataoculus-logo-dark.svg"*/}
+                  {/*    alt="Logo"*/}
+                  {/*    className="hidden dark:block"*/}
+                  {/*/>*/}
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/logo-dark.svg"
+                    src="/images/logo/logo-text-dark.svg"
                     alt="Logo"
                     className="hidden dark:block"
                   />
+
                 </a>
 
                 <p className="mt-5 mb-10">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  A Data Observability Company.
                 </p>
 
                 <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5">
@@ -57,7 +72,7 @@ const Footer = () => {
                   href="#"
                   className="text-black dark:text-white font-medium text-itemtitle"
                 >
-                  hello@solid.com
+                  info@dataoculus.app
                 </a>
               </motion.div>
 
@@ -103,7 +118,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/hiring"
                         className="inline-block hover:text-primary mb-3"
                       >
                         Careers
@@ -136,21 +151,21 @@ const Footer = () => {
                   whileInView="visible"
                   transition={{ duration: 1, delay: 0.1 }}
                   viewport={{ once: true }}
-                  className="animate_top"
+                  className="animate_top pr-60"
                 >
                   <h4 className="font-medium text-black dark:text-white text-itemtitle2 mb-9">
                     Support
                   </h4>
 
                   <ul>
-                    <li>
-                      <a
-                        href="#"
-                        className="inline-block hover:text-primary mb-3"
-                      >
-                        Company
-                      </a>
-                    </li>
+                    {/*<li>*/}
+                    {/*  <a*/}
+                    {/*    href="#"*/}
+                    {/*    className="inline-block hover:text-primary mb-3"*/}
+                    {/*  >*/}
+                    {/*    Company*/}
+                    {/*  </a>*/}
+                    {/*</li>*/}
                     <li>
                       <a
                         href="#"
@@ -159,14 +174,14 @@ const Footer = () => {
                         Press media
                       </a>
                     </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="inline-block hover:text-primary mb-3"
-                      >
-                        Our Blog
-                      </a>
-                    </li>
+                    {/*<li>*/}
+                    {/*  <a*/}
+                    {/*    href="#"*/}
+                    {/*    className="inline-block hover:text-primary mb-3"*/}
+                    {/*  >*/}
+                    {/*    Our Blog*/}
+                    {/*  </a>*/}
+                    {/*</li>*/}
                     <li>
                       <a
                         href="#"
@@ -178,64 +193,64 @@ const Footer = () => {
                   </ul>
                 </motion.div>
 
-                <motion.div
-                  variants={{
-                    hidden: {
-                      opacity: 0,
-                      y: -20,
-                    },
+                {/*<motion.div*/}
+                {/*  variants={{*/}
+                {/*    hidden: {*/}
+                {/*      opacity: 0,*/}
+                {/*      y: -20,*/}
+                {/*    },*/}
 
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                    },
-                  }}
-                  initial="hidden"
-                  whileInView="visible"
-                  transition={{ duration: 1, delay: 0.1 }}
-                  viewport={{ once: true }}
-                  className="animate_top"
-                >
-                  <h4 className="font-medium text-black dark:text-white text-itemtitle2 mb-9">
-                    Newsletter
-                  </h4>
-                  <p className="mb-4 w-[90%]">
-                    Subscribe to receive future updates
-                  </p>
+                {/*    visible: {*/}
+                {/*      opacity: 1,*/}
+                {/*      y: 0,*/}
+                {/*    },*/}
+                {/*  }}*/}
+                {/*  initial="hidden"*/}
+                {/*  whileInView="visible"*/}
+                {/*  transition={{ duration: 1, delay: 0.1 }}*/}
+                {/*  viewport={{ once: true }}*/}
+                {/*  className="animate_top"*/}
+                {/*>*/}
+                {/*  <h4 className="font-medium text-black dark:text-white text-itemtitle2 mb-9">*/}
+                {/*    Newsletter*/}
+                {/*  </h4>*/}
+                {/*  <p className="mb-4 w-[90%]">*/}
+                {/*    Subscribe to receive future updates*/}
+                {/*  </p>*/}
 
-                  <form action="#">
-                    <div className="relative">
-                      <input
-                        type="text"
-                        placeholder="Email address"
-                        className="w-full dark:bg-black border border-stroke dark:border-strokedark shadow-solid-11 dark:shadow-none rounded-full focus:outline-none focus:border-primary dark:focus:border-primary py-3 px-6"
-                      />
+                {/*  <form action="#">*/}
+                {/*    <div className="relative">*/}
+                {/*      <input*/}
+                {/*        type="text"*/}
+                {/*        placeholder="Email address"*/}
+                {/*        className="w-full dark:bg-black border border-stroke dark:border-strokedark shadow-solid-11 dark:shadow-none rounded-full focus:outline-none focus:border-primary dark:focus:border-primary py-3 px-6"*/}
+                {/*      />*/}
 
-                      <button aria-label="signup to newsletter" className="absolute right-0 p-4">
-                        <svg
-                          className="fill-[#757693] dark:fill-white hover:fill-primary"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 20 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g clipPath="url(#clip0_48_1487)">
-                            <path
-                              d="M3.1175 1.17318L18.5025 9.63484C18.5678 9.67081 18.6223 9.72365 18.6602 9.78786C18.6982 9.85206 18.7182 9.92527 18.7182 9.99984C18.7182 10.0744 18.6982 10.1476 18.6602 10.2118C18.6223 10.276 18.5678 10.3289 18.5025 10.3648L3.1175 18.8265C3.05406 18.8614 2.98262 18.8792 2.91023 18.8781C2.83783 18.8769 2.76698 18.857 2.70465 18.8201C2.64232 18.7833 2.59066 18.7308 2.55478 18.6679C2.51889 18.6051 2.50001 18.5339 2.5 18.4615V1.53818C2.50001 1.46577 2.51889 1.39462 2.55478 1.33174C2.59066 1.26885 2.64232 1.2164 2.70465 1.17956C2.76698 1.14272 2.83783 1.12275 2.91023 1.12163C2.98262 1.12051 3.05406 1.13828 3.1175 1.17318ZM4.16667 10.8332V16.3473L15.7083 9.99984L4.16667 3.65234V9.16651H8.33333V10.8332H4.16667Z"
-                              fill=""
-                            />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_48_1487">
-                              <rect width="20" height="20" fill="white" />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </button>
-                    </div>
-                  </form>
-                </motion.div>
+                {/*      <button aria-label="signup to newsletter" className="absolute right-0 p-4">*/}
+                {/*        <svg*/}
+                {/*          className="fill-[#757693] dark:fill-white hover:fill-primary"*/}
+                {/*          width="20"*/}
+                {/*          height="20"*/}
+                {/*          viewBox="0 0 20 20"*/}
+                {/*          fill="none"*/}
+                {/*          xmlns="http://www.w3.org/2000/svg"*/}
+                {/*        >*/}
+                {/*          <g clipPath="url(#clip0_48_1487)">*/}
+                {/*            <path*/}
+                {/*              d="M3.1175 1.17318L18.5025 9.63484C18.5678 9.67081 18.6223 9.72365 18.6602 9.78786C18.6982 9.85206 18.7182 9.92527 18.7182 9.99984C18.7182 10.0744 18.6982 10.1476 18.6602 10.2118C18.6223 10.276 18.5678 10.3289 18.5025 10.3648L3.1175 18.8265C3.05406 18.8614 2.98262 18.8792 2.91023 18.8781C2.83783 18.8769 2.76698 18.857 2.70465 18.8201C2.64232 18.7833 2.59066 18.7308 2.55478 18.6679C2.51889 18.6051 2.50001 18.5339 2.5 18.4615V1.53818C2.50001 1.46577 2.51889 1.39462 2.55478 1.33174C2.59066 1.26885 2.64232 1.2164 2.70465 1.17956C2.76698 1.14272 2.83783 1.12275 2.91023 1.12163C2.98262 1.12051 3.05406 1.13828 3.1175 1.17318ZM4.16667 10.8332V16.3473L15.7083 9.99984L4.16667 3.65234V9.16651H8.33333V10.8332H4.16667Z"*/}
+                {/*              fill=""*/}
+                {/*            />*/}
+                {/*          </g>*/}
+                {/*          <defs>*/}
+                {/*            <clipPath id="clip0_48_1487">*/}
+                {/*              <rect width="20" height="20" fill="white" />*/}
+                {/*            </clipPath>*/}
+                {/*          </defs>*/}
+                {/*        </svg>*/}
+                {/*      </button>*/}
+                {/*    </div>*/}
+                {/*  </form>*/}
+                {/*</motion.div>*/}
               </div>
             </div>
           </div>
@@ -268,7 +283,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <a href="/privacy-policy.html" className="hover:text-primary">
                     Privacy Policy
                   </a>
                 </li>

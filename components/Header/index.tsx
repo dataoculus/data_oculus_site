@@ -36,22 +36,38 @@ const Header = () => {
       }`}
     >
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 lg:flex items-center justify-between relative">
-        <div className="w-full lg:w-1/4 flex items-center justify-between">
+        <div className="w-full lg:w-1/12  flex items-center justify-between">
           <a href="/">
-            <Image
-              src="/images/logo/dataoculus-logo-dark.svg"
-              alt="logo"
-              width={119.03}
-              height={30}
-              className="w-full hidden dark:block"
-            />
-            <Image
-              src="/images/logo/dataoculus-logo-light.svg"
-              alt="logo"
-              width={119.03}
-              height={30}
-              className="w-full dark:hidden"
-            />
+            <div className="flex">
+              <Image
+                src="/images/logo/dataoculus-logo-dark.svg"
+                alt="logo"
+                width={119.03}
+                height={30}
+                className="w-full hidden dark:block"
+              />
+              <Image
+                src="/images/logo/logo-text-dark.svg"
+                alt="logo"
+                width={50}
+                height={30}
+                className="w-full hidden dark:block"
+              />
+              <Image
+                src="/images/logo/dataoculus-logo-light.svg"
+                alt="logo"
+                width={119.03}
+                height={30}
+                className="w-full dark:hidden"
+              />
+              <Image
+                src="/images/logo/logo-text-light.svg"
+                alt="logo"
+                width={50}
+                height={30}
+                className="w-full dark:hidden"
+              />
+            </div>
           </a>
 
           {/* <!-- Hamburger Toggle BTN --> */}
@@ -97,7 +113,7 @@ const Header = () => {
 
         {/* Nav Menu Start   */}
         <div
-          className={`w-full lg:w-full h-0 lg:h-auto invisible lg:visible lg:flex items-center justify-between ${
+          className={`w-full pl-44 lg:w-full h-0 lg:h-auto invisible lg:visible lg:flex items-center justify-between ${
             navigationOpen &&
             "!visible bg-white dark:bg-blacksection shadow-solid-5 h-auto max-h-[400px] overflow-y-scroll rounded-md mt-4 p-7.5"
           }`}

@@ -15,7 +15,7 @@ const Pricing = () => {
               headerInfo={{
                 title: `PRICING PLANS`,
                 subtitle: `Simple Pricing`,
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
+                description: `Data Oculus's goal is to increase data observability coverage on your data in a cost-effective way.`,
               }}
             />
           </div>
@@ -35,29 +35,35 @@ const Pricing = () => {
             {/* <!-- Pricing Item --> */}
             <div className="animate_top md:w-[45%] lg:w-1/3 group relative bg-white dark:bg-blacksection rounded-lg shadow-solid-10 dark:shadow-none border border-stroke dark:border-strokedark p-7.5 xl:p-12.5">
               <h3 className="text-black dark:text-white font-bold text-3xl xl:text-sectiontitle3 mb-7.5">
-                $10{" "}
+                $1k{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
                   /month
                 </span>
               </h3>
               <h4 className="text-black dark:text-white font-medium text-para2 mb-2.5">
-                Small Pack
+                Small Organizations
               </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+              {/*<p>SaaS deployment</p>*/}
 
               <div className="border-t border-stroke dark:border-strokedark mt-9 pt-9 pb-12.5">
                 <ul>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    300 GB Storage
+                    SaaS deployment
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    Unlimited Photos and Videos
+                    5 data sources
+                  </li>
+                  <li className="text-black dark:text-manatee mb-4 last:mb-0">
+                    100 Datasets
+                  </li>
+                  <li className="text-black dark:text-manatee mb-4 last:mb-0">
+                    Unlimited Usage
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0 opacity-40">
                     Exclusive Support
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0 opacity-40">
-                    Custom Branding Strategy
+                    Custom Features
                   </li>
                 </ul>
               </div>
@@ -94,23 +100,29 @@ const Pricing = () => {
                 </span>
               </h3>
               <h4 className="text-black dark:text-white font-medium text-para2 mb-2.5">
-                Medium Pack
+                Medium Organizations
               </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+              {/*<p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>*/}
 
               <div className="border-t border-stroke dark:border-strokedark mt-9 pt-9 pb-12.5">
                 <ul>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    300 GB Storage
+                    VPC deployment
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    Unlimited Photos and Videos
+                    10 data sources
+                  </li>
+                  <li className="text-black dark:text-manatee mb-4 last:mb-0">
+                    1k Datasets
+                  </li>
+                  <li className="text-black dark:text-manatee mb-4 last:mb-0">
+                    Unlimited usage
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
                     Exclusive Support
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0 opacity-40">
-                    Custom Branding Strategy
+                    Custom Features
                   </li>
                 </ul>
               </div>
@@ -137,20 +149,26 @@ const Pricing = () => {
             {/* <!-- Pricing Item --> */}
             <div className="animate_top md:w-[45%] lg:w-1/3 group relative bg-white dark:bg-blacksection rounded-lg shadow-solid-10 dark:shadow-none border border-stroke dark:border-strokedark p-7.5 xl:p-12.5">
               <h3 className="text-black dark:text-white font-bold text-3xl xl:text-sectiontitle3 mb-7.5">
-                $189{" "}
+                ${" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
                   /month
                 </span>
               </h3>
               <h4 className="text-black dark:text-white font-medium text-para2 mb-2.5">
-                Large Pack
+                Large Organizations
               </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+              {/*<p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>*/}
 
               <div className="border-t border-stroke dark:border-strokedark mt-9 pt-9 pb-12.5">
                 <ul>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    300 GB Storage
+                    VPC & On-Prem deployment
+                  </li>
+                  <li className="text-black dark:text-manatee mb-4 last:mb-0">
+                    All data sources
+                  </li>
+                  <li className="text-black dark:text-manatee mb-4 last:mb-0">
+                    Unlimited Datasets
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
                     Unlimited Photos and Videos
@@ -159,7 +177,7 @@ const Pricing = () => {
                     Exclusive Support
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    Custom Branding Strategy
+                    Custom Features
                   </li>
                 </ul>
               </div>

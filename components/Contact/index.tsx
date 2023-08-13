@@ -38,6 +38,53 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-wrap md:flex-nowrap flex-col-reverse md:flex-row gap-8 xl:gap-20 md:justify-between">
+
+            <motion.div
+              variants={{
+                hidden: {
+                  opacity: 0,
+                  y: -20,
+                },
+
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 2, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="animate_top w-full md:w-2/5 lg:w-[26%] md:p-7.5 xl:pt-15 text-right"
+            >
+              <h2 className="text-black dark:text-white text-3xl xl:text-sectiontitle2 font-semibold mb-12.5">
+                Contact us
+              </h2>
+
+              <div className="mb-7 5">
+                <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
+                  Location
+                </h4>
+                <p>Palo Alto, California</p>
+              </div>
+              <div className="mb-7 5">
+                <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
+                  Email Address
+                </h4>
+                <p>
+                  <a href="#">info@dataoculus.app</a>
+                </p>
+              </div>
+              <div>
+                <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
+                  Phone Number
+                </h4>
+                <p>
+                  <a href="#">+1 1234567890</a>
+                </p>
+              </div>
+            </motion.div>
+
             <motion.div
               variants={{
                 hidden: {
@@ -135,52 +182,6 @@ const Contact = () => {
                   </button>
                 </div>
               </form>
-            </motion.div>
-
-            <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 2, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top w-full md:w-2/5 lg:w-[26%] md:p-7.5 xl:pt-15"
-            >
-              <h2 className="text-black dark:text-white text-3xl xl:text-sectiontitle2 font-semibold mb-12.5">
-                Find us
-              </h2>
-
-              <div className="mb-7 5">
-                <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
-                  Location
-                </h4>
-                <p>Palo Alto, California</p>
-              </div>
-              <div className="mb-7 5">
-                <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
-                  Email Address
-                </h4>
-                <p>
-                  <a href="#">info@dataoculus.app</a>
-                </p>
-              </div>
-              <div>
-                <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
-                  Phone Number
-                </h4>
-                <p>
-                  <a href="#">+1 1234567890</a>
-                </p>
-              </div>
             </motion.div>
           </div>
         </div>

@@ -12,9 +12,9 @@ const Integration = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: `INTEGRATIONS`,
+              title: `DATA SOURCES INTEGRATIONS`,
               subtitle: `100 % coverage on your data sources.`,
-              description: `Data Oculus integrates with all possible types of datastores to provide you best coverage on data observability.`,
+              description: `Data Oculus integrates with all types of datastores to provide you observability on all your data.`,
             }}
           />
 
@@ -62,7 +62,8 @@ const Integration = () => {
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/brand-07.svg"
+                  // src="./images/brand/brand-07.svg"
+                  src="./images/datastores/mysql-icon-only.svg"
                   alt="Brand"
                 />
               </div>
@@ -109,7 +110,8 @@ const Integration = () => {
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/brand-08.svg"
+                  // src="./images/brand/brand-08.svg"
+                  src="./images/datastores/kafka-icon-only.svg"
                   alt="Brand"
                 />
               </div>
@@ -158,7 +160,8 @@ const Integration = () => {
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/brand-09.svg"
+                  // src="./images/brand/brand-09.svg"
+                  src="./images/datastores/pub-sub-logo-only.svg"
                   alt="Brand"
                 />
               </div>
@@ -226,7 +229,8 @@ const Integration = () => {
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/brand-10.svg"
+                  // src="./images/brand/brand-10.svg"
+                  src="./images/datastores/google-bigquery-icon-only.svg"
                   alt="Brand"
                 />
               </div>
@@ -275,7 +279,8 @@ const Integration = () => {
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/brand-11.svg"
+                  // src="./images/brand/brand-11.svg"
+                  src="./images/datastores/Elasticsearch-icon-only.svg"
                   alt="Brand"
                 />
               </div>
@@ -324,7 +329,8 @@ const Integration = () => {
                 <Image
                   width={50}
                   height={50}
-                  src="./images/brand/brand-12.svg"
+                  // src="./images/brand/brand-12.svg"
+                  src="./images/datastores/hadoop-icon-only.svg"
                   alt="Brand"
                 />
               </div>

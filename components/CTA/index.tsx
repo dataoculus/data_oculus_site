@@ -26,15 +26,13 @@ const CTA = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_left md:w-[70%] lg:w-1/2"
+              className="animate_left md:w-[70%] lg:w-2/3"
             >
-              <h2 className="text-black dark:text-white text-3xl xl:text-sectiontitle4 font-bold mb-4 w-11/12">
-                Join With Us Today & Increase Your Productivity
+              <h2 className="text-black dark:text-white text-3xl xl:text-sectiontitle4 font-bold mb-4 ">
+                Join With Us Today <br/> & Increase Your Data Users Productivity !
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                convallis tortor eros. Donec vitae tortor lacus. Phasellus
-                aliquam ante in maximus.
+                Make all data based decision confidently across your organization.
               </p>
             </motion.div>
             <motion.div
