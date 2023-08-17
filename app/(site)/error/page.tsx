@@ -4,8 +4,8 @@ import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Error Page - Solid SaaS Boilerplate",
-  description: "This is Error page for Solid Pro",
+  title: "Error Page - Data Oculus",
+  description: "This is Error page for Data Oculus",
   // other metadata
 };
 

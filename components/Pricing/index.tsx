@@ -34,8 +34,11 @@ const Pricing = () => {
           <div className="flex flex-wrap lg:flex-nowrap justify-center gap-7.5 xl:gap-12.5">
             {/* <!-- Pricing Item --> */}
             <div className="animate_top md:w-[45%] lg:w-1/3 group relative bg-white dark:bg-blacksection rounded-lg shadow-solid-10 dark:shadow-none border border-stroke dark:border-strokedark p-7.5 xl:p-12.5">
+              <div className="absolute top-7.5 -right-3.5 -rotate-90 rounded-tl-full rounded-bl-full bg-primary font-medium text-white text-metatitle uppercase py-1.5 px-4.5">
+                &nbsp; Offer &nbsp; &nbsp;
+              </div>
               <h3 className="text-black dark:text-white font-bold text-3xl xl:text-sectiontitle3 mb-7.5">
-                $1k{" "}
+                $1 k{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
                   /month
                 </span>
@@ -48,13 +51,13 @@ const Pricing = () => {
               <div className="border-t border-stroke dark:border-strokedark mt-9 pt-9 pb-12.5">
                 <ul>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    SaaS deployment
+                    SaaS or VPC deployment
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
                     5 data sources
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    100 Datasets
+                    1000 Datasets
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
                     Unlimited Usage
@@ -89,12 +92,12 @@ const Pricing = () => {
 
             {/* <!-- Pricing Item --> */}
             <div className="animate_top md:w-[45%] lg:w-1/3 group relative bg-white dark:bg-blacksection rounded-lg shadow-solid-10 dark:shadow-none border border-stroke dark:border-strokedark p-7.5 xl:p-12.5">
-              <div className="absolute top-7.5 -right-3.5 -rotate-90 rounded-tl-full rounded-bl-full bg-primary font-medium text-white text-metatitle uppercase py-1.5 px-4.5">
-                popular
-              </div>
+              {/*<div className="absolute top-7.5 -right-3.5 -rotate-90 rounded-tl-full rounded-bl-full bg-primary font-medium text-white text-metatitle uppercase py-1.5 px-4.5">*/}
+              {/*  popular*/}
+              {/*</div>*/}
 
               <h3 className="text-black dark:text-white font-bold text-3xl xl:text-sectiontitle3 mb-7.5">
-                $59{" "}
+                $5 k{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
                   /month
                 </span>
@@ -107,13 +110,13 @@ const Pricing = () => {
               <div className="border-t border-stroke dark:border-strokedark mt-9 pt-9 pb-12.5">
                 <ul>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    VPC deployment
+                    SaaS or VPC deployment
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
                     10 data sources
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    1k Datasets
+                    5000 Datasets
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
                     Unlimited usage
@@ -149,7 +152,7 @@ const Pricing = () => {
             {/* <!-- Pricing Item --> */}
             <div className="animate_top md:w-[45%] lg:w-1/3 group relative bg-white dark:bg-blacksection rounded-lg shadow-solid-10 dark:shadow-none border border-stroke dark:border-strokedark p-7.5 xl:p-12.5">
               <h3 className="text-black dark:text-white font-bold text-3xl xl:text-sectiontitle3 mb-7.5">
-                ${" "}
+                $10 k{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
                   /month
                 </span>
@@ -162,7 +165,7 @@ const Pricing = () => {
               <div className="border-t border-stroke dark:border-strokedark mt-9 pt-9 pb-12.5">
                 <ul>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    VPC & On-Prem deployment
+                    SaaS, VPC or On-Prem deployment
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
                     All data sources

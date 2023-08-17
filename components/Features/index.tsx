@@ -8,14 +8,15 @@ const Feature = () => {
   return (
     <>
       {/* <!-- ===== Features Start ===== --> */}
-      <section id="features" className="py-20 lg:py-25 xl:py-30">
+      <section id="features" className="pb-20 lg:pb-25 xl:pb-30">
+      {/*/!*<section id="features" className="py-20 lg:py-25 xl:py-30">*!/  // enable this when <brands/> are enabled*/}
         <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: "CORE FEATURES",
-              subtitle: "Data Oculus Product Pillars",
-              description: `Data Oculus is built for anyone looking for any kind of observability on their data in a most cost-effective way.`,
+              title: "FEATURES",
+              subtitle: "Core Product Pillars",
+              description: `Data Oculus povides 360° observability on your data for everyone`,
             }}
           />
           {/* <!-- Section Title End --> */}

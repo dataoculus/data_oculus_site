@@ -13,15 +13,14 @@ const featuresData: Feature[] = [
     icon: "/images/icon/icon-02.svg",
     title: "Multi Facet Observability",
     description:
-      "Monitor your data for all your needs." +
-        "Like you monitor Infrastructure & Applications.",
+      "Monitor ALL your data for ALL your needs. as if you monitor your Infra & Applications."
   },
   {
     id: 3,
     icon: "/images/icon/icon-03.svg",
-      title: "Self Serve, No Code Capabilities",
+      title: "Fully Self Serviced",
     description:
-      "Easy UI based setup. Dont need engineering or complex YAML configuration.",
+      "Complete UI based setup. No need for data engineering team to maintain complex YAML configuration.",
   },
   // {
   //   id: 4,
@@ -42,9 +41,8 @@ const featuresData: Feature[] = [
     icon: "/images/icon/icon-06.svg",
     title: "Realtime",
     description:
-      "Detect issues sooner" +
-        "Reduce any negative impact to business." +
-        "lowest latency on Data Observability !",
+      "Detect issues in real-time, Reduce TTD & impact to business with Lowest latency on Data Observability in the market!",
+
   },
 ];
 

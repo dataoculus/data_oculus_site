@@ -16,26 +16,26 @@ const Hero = () => {
         <>
             <section className="pt-35 md:pt-40 xl:pt-46 pb-20 xl:pb-25 overflow-hidden">
                 <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
-                    <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
+                    <div className="flex lg:items-center lg:gap-4.5 xl:gap-18">
                         <div className="pl-32 md:w-1/2 ">
                             <h4 className="text-black dark:text-white text-lg font-medium mb-4.5">
                                 🔥 Datadog for data !
                             </h4>
-                            <h1 className="text-black dark:text-white text-3xl xl:text-hero font-bold pr-16 ">
-                                Real-Time
+                            <h1 className="text-black dark:text-white text-xl xl:text-hero font-bold pr-10 ">
+                                Real-Time,
                             </h1>
-                            <h1 className="text-black dark:text-white text-3xl xl:text-hero font-bold pr-16 ">
-                                Multi-Dimensional
+                            <h1 className="text-black dark:text-white text-xl xl:text-hero font-bold pr-10 ">
+                                Multi-Dimensional,
                             </h1>
-                            <h1 className="text-black dark:text-white text-3xl xl:text-hero font-bold pr-16 ">
-                                Data Observability
+                            <h1 className="text-black dark:text-white text-xl xl:text-hero font-bold pr-10 ">
+                                Data Observability,
                             </h1>
-                            <h1 className="text-black dark:text-white text-3xl xl:text-hero font-bold mb-5 pr-16 ">
+                            <h1 className="text-black dark:text-white text-lg xl:text-hero font-bold mb-5 ">
                                 For
                                 <span
                                     className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1 ml-2.5 ">
                                     <TypeAnimation
-                                        sequence={['Data Scientist', 500, 'Data Engineers', 500, 'Data Stewards', 500, 'Product Managers', 500, 'Everyone !', 500]}
+                                        sequence={['Data Scientist', 500, 'Data Engineers', 500, 'Data Stewards', 500, 'Product Managers', 500, 'Business Analyst', 500, 'Everyone !', 500]}
                                         // style={{ fontSize: '2em' }}
                                         // repeat={Infinity}
                                     />
