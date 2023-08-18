@@ -3,6 +3,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  output: "standalone", // for docker
   images: {
     domains: ["localhost"],
     remotePatterns: [
