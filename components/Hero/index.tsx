@@ -2,7 +2,6 @@
 import React, {useState} from "react";
 import Image from "next/image";
 
-// import {motion} from "framer-motion";
 import {TypeAnimation} from "react-type-animation";
 
 const Hero = () => {
