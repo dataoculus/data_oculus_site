@@ -5,11 +5,11 @@ const nextConfig = {
   swcMinify: true,
   output: "standalone", // for docker
   images: {
-    domains: ["localhost"],
+    domains: ["localhost", "dataoculus.app", "public.dataoculus.app" ],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "cdn.sanity.io",
+        hostname: "**",
         port: "",
       },
     ],

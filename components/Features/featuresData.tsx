@@ -18,7 +18,7 @@ const featuresData: Feature[] = [
   {
     id: 3,
     icon: "/images/icon/icon-03.svg",
-      title: "Fully Self Serviced",
+      title: "Fully Self Service",
     description:
       "Complete UI based setup. No need for data engineering team to maintain complex YAML configuration.",
   },
@@ -41,7 +41,7 @@ const featuresData: Feature[] = [
     icon: "/images/icon/icon-06.svg",
     title: "Realtime",
     description:
-      "Detect issues in real-time, Reduce TTD & impact to business with Lowest latency on Data Observability in the market!",
+      "Detect issues in seconds!, Reduce impact to business with Lowest latency on Data Observability in the market!",
 
   },
 ];

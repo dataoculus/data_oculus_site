@@ -91,7 +91,7 @@ const About = () => {
                       // fill
                   />
                   <Image
-                      src="./images/icon/check-mark-dark.svg"
+                      src="./images/icon/check-mark-light.svg"
                       alt="About"
                       className="hidden dark:block pl-1"
                       width={26} height={26}
@@ -119,7 +119,7 @@ const About = () => {
                       // fill
                   />
                   <Image
-                      src="./images/icon/check-mark-dark.svg"
+                      src="./images/icon/check-mark-light.svg"
                       alt="About"
                       className="hidden dark:block pl-1"
                       width={26} height={26}
@@ -147,7 +147,7 @@ const About = () => {
                       // fill
                   />
                   <Image
-                      src="./images/icon/check-mark-dark.svg"
+                      src="./images/icon/check-mark-light.svg"
                       alt="About"
                       className="hidden dark:block pl-1"
                       width={26} height={26}

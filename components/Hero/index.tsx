@@ -29,8 +29,11 @@ const Hero = () => {
                             <h1 className="text-black dark:text-white text-xl xl:text-hero font-bold pr-10 ">
                                 Data Observability,
                             </h1>
+                            <h1 className="text-black dark:text-white text-xl xl:text-hero font-bold pr-10 ">
+                                <span className="text-3xl"> with </span> Data Contracts
+                            </h1>
                             <h1 className="text-black dark:text-white text-lg xl:text-hero font-bold mb-5 ">
-                                For
+                                <span className="text-3xl"> for </span>
                                 <span
                                     className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1 ml-2.5 ">
                                     <TypeAnimation
