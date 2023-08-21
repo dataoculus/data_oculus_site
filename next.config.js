@@ -5,11 +5,21 @@ const nextConfig = {
   swcMinify: true,
   output: "standalone", // for docker
   images: {
-    domains: ["localhost", "dataoculus.app", "public.dataoculus.app" ],
+    domains: ["dataoculus.app", "www.dataoculus.app", "localhost"],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**",
+        hostname: "dataoculus.app",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "www.dataoculus.app",
+        port: "",
+      },
+      {
+        protocol: "http",
+        hostname: "localhost",
         port: "",
       },
     ],

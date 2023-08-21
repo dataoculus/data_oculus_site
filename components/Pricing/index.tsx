@@ -15,7 +15,7 @@ const Pricing = () => {
               headerInfo={{
                 title: `PRICING PLANS`,
                 subtitle: `Simple Pricing`,
-                description: `Data Oculus's goal is to increase data observability coverage on your data in a cost-effective way.`,
+                description: `Data Oculus provides best CapEx and OpEx prices to help you increase data observability coverage on all your data in a most cost-effective way.`,
               }}
             />
           </div>

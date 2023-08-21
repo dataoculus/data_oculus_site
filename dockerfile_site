@@ -1,5 +1,5 @@
 # Use Node.js 18-alpine as base image
-FROM node:18-alpine AS node_alpine_base_image
+FROM node:20-alpine AS node_alpine_base_image
 
 ARG SERVICE_PORT=80
 ARG APP_ENV=production
@@ -52,6 +52,7 @@ CMD ["pnpm", "start"]
 # Package first
 
 # docker build --platform linux/amd64 -t oculus-site-pkgs -f dockerfile_pkgs .
+
 # UI
 # docker build --platform linux/amd64 --build-arg APP_ENV=production -t oculus-site -f dockerfile_site .
 # docker tag oculus-site us-central1-docker.pkg.dev/oculus-prime/dop/oculus-site:latest

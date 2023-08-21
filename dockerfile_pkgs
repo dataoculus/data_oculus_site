@@ -1,5 +1,5 @@
 # Use Node.js 18-alpine as base image
-FROM node:18-alpine AS base
+FROM node:20-alpine AS node_alpine_base_image
 
 # even for prod, use this flag, to get all dependencies, the actuall APP container will prune non prod stuff.
 #ARG APP_ENV=development
@@ -13,7 +13,7 @@ ENV NEXT_TELEMETRY_DISABLED 1
 RUN npm install -g pnpm
 
 # install packages
-FROM base AS deps
+FROM node_alpine_base_image AS deps
 WORKDIR /app
 RUN apk add --no-cache libc6-compat
 COPY package.json pnpm-lock.yaml ./

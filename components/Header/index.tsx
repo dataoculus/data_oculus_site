@@ -36,7 +36,7 @@ const Header = () => {
       }`}
     >
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 lg:flex items-center justify-between relative">
-        <div className="w-full lg:w-1/12  flex items-center justify-between">
+        <div className="w-full lg:w-1/12 flex items-center justify-between">
           <a href="/">
             <div className="flex">
               <Image

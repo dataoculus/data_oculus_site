@@ -30,13 +30,13 @@ const About = () => {
                 className="animate_left hidden md:block md:w-1/2 relative mx-auto aspect-[588/526.5]"
             >
               <Image
-                  src="/images/about/about-light-01.svg"
+                  src="/images/about/profile-light.png"
                   alt="About"
                   className="dark:hidden"
                   fill
               />
               <Image
-                  src="/images/about/about-dark-01.svg"
+                  src="/images/about/profile-dark.png"
                   alt="About"
                   className="hidden dark:block"
                   fill
@@ -332,13 +332,13 @@ const About = () => {
               className="animate_right hidden md:block md:w-1/2 relative mx-auto aspect-[588/526.5]"
             >
               <Image
-                src="./images/about/about-light-02.svg"
+                src="/images/about/quality-light.png"
                 alt="About"
                 className="dark:hidden"
                 fill
               />
               <Image
-                src="./images/about/about-dark-02.svg"
+                src="/images/about/quality-dark.png"
                 alt="About"
                 className="hidden dark:block"
                 fill
@@ -372,13 +372,13 @@ const About = () => {
                 className="animate_left hidden md:block md:w-1/2 relative mx-auto aspect-[588/526.5]"
             >
               <Image
-                  src="/images/about/about-light-01.svg"
+                  src="/images/about/contract-light.png"
                   alt="About"
                   className="dark:hidden"
                   fill
               />
               <Image
-                  src="/images/about/about-dark-01.svg"
+                  src="/images/about/contract-dark.png"
                   alt="About"
                   className="hidden dark:block"
                   fill
