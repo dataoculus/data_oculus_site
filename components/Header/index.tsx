@@ -23,6 +23,11 @@ const Header = () => {
     }
   };
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  // };
+  // const [email, setEmail] = useState("");
+
   useEffect(() => {
     window.addEventListener("scroll", handleStickyMenu);
   });
@@ -44,28 +49,28 @@ const Header = () => {
                 alt="logo"
                 width={119.03}
                 height={30}
-                className="w-full hidden dark:block"
-              />
+                className="w-1/4 lg:w-1/2 hidden dark:block"
+              /> &nbsp; &nbsp;
               <Image
                 src="/images/logo/logo-text-dark.svg"
                 alt="logo"
                 width={50}
                 height={30}
-                className="w-full hidden dark:block"
+                className="w-1/4 lg:w-2/3 hidden dark:block"
               />
               <Image
                 src="/images/logo/dataoculus-logo-light.svg"
                 alt="logo"
                 width={119.03}
                 height={30}
-                className="w-full dark:hidden"
-              />
+                className="w-1/4 lg:w-1/2 dark:hidden"
+              /> &nbsp; &nbsp;
               <Image
                 src="/images/logo/logo-text-light.svg"
                 alt="logo"
                 width={50}
                 height={30}
-                className="w-full dark:hidden"
+                className="w-1/4 lg:w-2/3 dark:hidden"
               />
             </div>
           </a>
@@ -167,6 +172,31 @@ const Header = () => {
             </ul>
           </nav>
 
+          {/*// Join waitList thing on menu bar*/}
+          {/*<div className="mt-10">*/}
+          {/*  <form onSubmit={handleSubmit}>*/}
+          {/*    <div className="flex flex-wrap gap-5">*/}
+          {/*      <input*/}
+          {/*          value={email}*/}
+          {/*          onChange={(e) => setEmail(e.target.value)}*/}
+          {/*          type="text"*/}
+          {/*          placeholder="Enter your email address"*/}
+          {/*          className="dark:bg-black border border-stroke dark:border-strokedark shadow-solid-2 dark:shadow-none rounded-full focus:outline-none focus:border-primary dark:focus:border-primary py-2.5 px-6"*/}
+          {/*      />*/}
+          {/*      <button*/}
+          {/*          aria-label="signup to newsletter"*/}
+          {/*          className="flex bg-black hover:bg-blackho dark:bg-btndark text-white rounded-full ease-in-out duration-300 px-7.5 py-2.5"*/}
+          {/*      >*/}
+          {/*        Join !*/}
+          {/*      </button>*/}
+          {/*    </div>*/}
+          {/*  </form>*/}
+
+          {/*  <p className="text-black dark:text-white mt-5">*/}
+          {/*    Try for free, no credit card required.*/}
+          {/*  </p>*/}
+          {/*</div>*/}
+
           <div className="flex items-center gap-6 mt-7 lg:mt-0">
             <ThemeToggler />
 
@@ -179,9 +209,10 @@ const Header = () => {
 
             <Link
               href="https://public.dataoculus.app"
-              className="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-2.5 px-7.5"
+              className="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-1.5 px-3.5"
             >
-              Demo 🔥
+              Login / SignUp
+              {/*🔥*/}
             </Link>
           </div>
         </div>

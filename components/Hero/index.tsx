@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import Image from "next/image";
 
 import {TypeAnimation} from "react-type-animation";
+import Link from "next/link";
 
 const Hero = () => {
     const [email, setEmail] = useState("");
@@ -68,29 +69,29 @@ const Hero = () => {
                             {/*    description*/}
                             {/*</p>*/}
 
-                            <div className="mt-10">
-                                <form onSubmit={handleSubmit}>
-                                    <div className="flex flex-wrap gap-5">
-                                        <input
-                                            value={email}
-                                            onChange={(e) => setEmail(e.target.value)}
-                                            type="text"
-                                            placeholder="Enter your email address"
-                                            className="dark:bg-black border border-stroke dark:border-strokedark shadow-solid-2 dark:shadow-none rounded-full focus:outline-none focus:border-primary dark:focus:border-primary py-2.5 px-6"
-                                        />
-                                        <button
-                                            aria-label="signup to newsletter"
-                                            className="flex bg-black hover:bg-blackho dark:bg-btndark text-white rounded-full ease-in-out duration-300 px-7.5 py-2.5"
-                                        >
-                                            Join !
-                                        </button>
-                                    </div>
-                                </form>
+                            {/*<div className="mt-10">*/}
+                            {/*    <form onSubmit={handleSubmit}>*/}
+                            {/*        <div className="flex flex-wrap gap-5">*/}
+                            {/*            <input*/}
+                            {/*                value={email}*/}
+                            {/*                onChange={(e) => setEmail(e.target.value)}*/}
+                            {/*                type="text"*/}
+                            {/*                placeholder="Enter your email address"*/}
+                            {/*                className="dark:bg-black border border-stroke dark:border-strokedark shadow-solid-2 dark:shadow-none rounded-full focus:outline-none focus:border-primary dark:focus:border-primary py-2.5 px-6"*/}
+                            {/*            />*/}
+                            {/*            <button*/}
+                            {/*                aria-label="signup to newsletter"*/}
+                            {/*                className="flex bg-black hover:bg-blackho dark:bg-btndark text-white rounded-full ease-in-out duration-300 px-7.5 py-2.5"*/}
+                            {/*            >*/}
+                            {/*                Join !*/}
+                            {/*            </button>*/}
+                            {/*        </div>*/}
+                            {/*    </form>*/}
 
-                                <p className="text-black dark:text-white mt-5">
-                                    Try for free, no credit card required.
-                                </p>
-                            </div>
+                            {/*    <p className="text-black dark:text-white mt-5">*/}
+                            {/*        Try for free, no credit card required.*/}
+                            {/*    </p>*/}
+                            {/*</div>*/}
                         </div>
 
                         <div className="animate_right md:w-1/2 hidden lg:block pr-10">
@@ -131,9 +132,41 @@ const Hero = () => {
                                     />
                                 </div>
                             </div>
+
                             <p className="text-black dark:text-white mt-5 text-right text-xs">
                                 Datadog is trademark of <a href="https://www.datadoghq.com/" >Datadog Inc </a>
                             </p>
+
+                            <div className="mt-5 content-center">
+                                {/*<form onSubmit={handleSubmit}>*/}
+                                {/*    <div className="flex flex-wrap gap-5">*/}
+                                {/*        <input*/}
+                                {/*            value={email}*/}
+                                {/*            onChange={(e) => setEmail(e.target.value)}*/}
+                                {/*            type="text"*/}
+                                {/*            placeholder="Enter your email address"*/}
+                                {/*            className="dark:bg-black border border-stroke dark:border-strokedark shadow-solid-2 dark:shadow-none rounded-full focus:outline-none focus:border-primary dark:focus:border-primary py-2.5 px-6"*/}
+                                {/*        />*/}
+                                {/*        <button*/}
+                                {/*            aria-label="signup to newsletter"*/}
+                                {/*            className="flex bg-black hover:bg-blackho dark:bg-btndark text-white rounded-full ease-in-out duration-300 px-7.5 py-2.5"*/}
+                                {/*        >*/}
+                                {/*            Join !*/}
+                                {/*        </button>*/}
+                                {/*    </div>*/}
+                                {/*</form>*/}
+
+                                <Link
+                                    href="https://public.dataoculus.app"
+                                    className="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-2.5 px-7.5"
+                                >
+                                    Try Demo on a public dataset & join a wait-list 🔥
+                                </Link>
+
+                                {/*<p className="text-black font-bold underline dark:text-white mt-5">*/}
+                                {/*    Try Demo on a public dataset and join a waitlist !*/}
+                                {/*</p>*/}
+                            </div>
                         </div>
                     </div>
                 </div>
