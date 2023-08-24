@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 import "../globals.css";
 
 import ToasterContext from "../context/ToastContext";
+import GoogleAnalytics from "@/app/(site)/GoogleAnalytics";
 
 export default function RootLayout({
   children,
@@ -18,6 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="eng">
+        <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID} />
       <body className={`dark:bg-black`}>
         <ThemeProvider
           enableSystem={false}
