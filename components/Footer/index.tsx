@@ -62,7 +62,7 @@ const Footer = () => {
                 </a>
 
                 <p className="mt-5 mb-10">
-                  A Data Observability Company.
+                  A Complete Data Observability Service.
                 </p>
 
                 <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5">

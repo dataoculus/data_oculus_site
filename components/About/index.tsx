@@ -425,7 +425,7 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h5 className="text-black dark:text-white text-metatitle2 mb-0.5">
-                    Schema Agreements
+                    Data Schema Agreements
                   </h5>
                 </div>
               </div>
@@ -436,7 +436,7 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h5 className="text-black dark:text-white text-metatitle2 mb-0.5">
-                    Rule based agreements
+                    Data Types agreements
                   </h5>
                 </div>
               </div>
