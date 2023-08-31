@@ -48,15 +48,15 @@ CMD ["pnpm", "start"]
 
 # useful commands for reference
 # NOTE: dont use APP_ENV to be production, it will not fetch all the required packages for pnpm build.
-# On production:
-# Package first
 
+# On production:
+
+# Package first
 # docker build --platform linux/amd64 -t oculus-site-pkgs -f dockerfile_pkgs .
 
 # UI
 # docker build --platform linux/amd64 --build-arg APP_ENV=production -t oculus-site -f dockerfile_site .
-# docker tag oculus-site us-central1-docker.pkg.dev/oculus-prime/dop/oculus-site:latest
-# docker push us-central1-docker.pkg.dev/oculus-prime/dop/oculus-site:latest
+# docker tag oculus-site us-central1-docker.pkg.dev/oculus-prime/dop/oculus-site:latest && docker push us-central1-docker.pkg.dev/oculus-prime/dop/oculus-site:latest
 
 
 # On Mac

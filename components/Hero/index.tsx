@@ -19,14 +19,14 @@ const Hero = () => {
                     <div className="flex lg:items-center lg:gap-4.5 xl:gap-18">
                         <div className="pl-32 md:w-1/2 ">
                             <h4 className="text-black dark:text-white text-lg font-medium mb-4.5">
-                                🔥 Datadog for data !
+                                🔥 Datadog for data is here!
                             </h4>
                             <h1 className="text-black dark:text-white text-xl xl:text-hero font-bold pr-10 ">
-                                Real-Time,
+                                Real-Time
                             </h1>
-                            <h1 className="text-black dark:text-white text-xl xl:text-hero font-bold pr-10 ">
-                                Multi-Dimensional,
-                            </h1>
+                            {/*<h1 className="text-black dark:text-white text-xl xl:text-hero font-bold pr-10 ">*/}
+                            {/*    Multi-Dimensional,*/}
+                            {/*</h1>*/}
                             <h1 className="text-black dark:text-white text-xl xl:text-hero font-bold pr-10 ">
                                 Data Observability,
                             </h1>
@@ -157,10 +157,10 @@ const Hero = () => {
                                 {/*</form>*/}
 
                                 <Link
-                                    href="https://public.dataoculus.app"
+                                    href="#"
                                     className="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-2.5 px-7.5"
                                 >
-                                    Try Demo on a public dataset & join a wait-list 🔥
+                                    Try Demo on a public dataset 🔥
                                 </Link>
 
                                 {/*<p className="text-black font-bold underline dark:text-white mt-5">*/}

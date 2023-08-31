@@ -208,7 +208,7 @@ const Header = () => {
             {/*</Link>*/}
 
             <Link
-              href="https://public.dataoculus.app"
+              href="/auth/signup"
               className="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-1.5 px-3.5"
             >
               Login / SignUp

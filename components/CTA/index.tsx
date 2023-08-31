@@ -29,7 +29,9 @@ const CTA = () => {
               className="animate_left md:w-[70%] lg:w-2/3"
             >
               <h2 className="text-black dark:text-white text-3xl xl:text-sectiontitle4 font-bold mb-4 ">
-                Join With Us Today <br/> & Increase Your Data Users Productivity !
+                Increase Observability at minimum cost
+                <br/>
+                & Make your Data Users Productive !
               </h2>
               <p>
                 Make all data based decision confidently across your organization.
@@ -62,10 +64,11 @@ const CTA = () => {
                   className="hidden xl:block"
                 />
                 <a
-                  href="signup.html"
+                  href="/auth/signup"
                   className="inline-flex items-center gap-2.5 font-medium text-white dark:text-black bg-black dark:bg-white rounded-full py-3 px-6 hover:opacity-90"
                 >
-                  Sign up free
+                  Sign up
+                  <br/> for free license
                   <Image
                     width={20}
                     height={20}
