@@ -157,10 +157,10 @@ const Hero = () => {
                                 {/*</form>*/}
 
                                 <Link
-                                    href="#"
+                                    href="https://cal.com/data-oculus"
                                     className="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-2.5 px-7.5"
                                 >
-                                    Try Demo on a public dataset 🔥
+                                    Setup Online Demo 🔥
                                 </Link>
 
                                 {/*<p className="text-black font-bold underline dark:text-white mt-5">*/}

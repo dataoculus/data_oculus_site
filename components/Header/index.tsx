@@ -208,11 +208,11 @@ const Header = () => {
             {/*</Link>*/}
 
             <Link
-              href="/auth/signup"
+              // href="/auth/signup"
+              href="https://cal.com/data-oculus"
               className="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-1.5 px-3.5"
             >
-              Login / SignUp
-              {/*🔥*/}
+              Demo 🔥
             </Link>
           </div>
         </div>

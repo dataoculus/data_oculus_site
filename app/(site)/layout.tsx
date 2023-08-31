@@ -19,7 +19,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="eng">
-        <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID} />
+        {/*<GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID} />*/}
+        <GoogleAnalytics GA_TRACKING_ID='G-3VE96WE86P' />
       <body className={`dark:bg-black`}>
         <ThemeProvider
           enableSystem={false}
