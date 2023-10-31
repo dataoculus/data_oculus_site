@@ -80,7 +80,7 @@ const Contact = () => {
                   Phone Number
                 </h4>
                 <p>
-                  <a href="#">+1 1234567890</a>
+                  <a href="#">+1 5515804191</a>
                 </p>
               </div>
             </motion.div>

@@ -29,12 +29,12 @@ const CTA = () => {
               className="animate_left md:w-[70%] lg:w-2/3"
             >
               <h2 className="text-black dark:text-white text-3xl xl:text-sectiontitle4 font-bold mb-4 ">
-                Increase Observability at minimum cost
+                A Data observability tool for all data users.
                 <br/>
-                & Make your Data Users Productive !
+                Make them productive & Cost-Efficient !
               </h2>
               <p>
-                Make all data based decision confidently across your organization.
+                Our customers on avg saves 30% time of data users while preping or understanding the data.
               </p>
             </motion.div>
             <motion.div
@@ -64,11 +64,11 @@ const CTA = () => {
                   className="hidden xl:block"
                 />
                 <a
-                  href="/auth/signup"
+                  href="https://cal.com/data-oculus"
                   className="inline-flex items-center gap-2.5 font-medium text-white dark:text-black bg-black dark:bg-white rounded-full py-3 px-6 hover:opacity-90"
                 >
                   Sign up
-                  <br/> for free license
+                  <br/> for free trial
                   <Image
                     width={20}
                     height={20}

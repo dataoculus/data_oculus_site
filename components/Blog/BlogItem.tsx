@@ -33,7 +33,7 @@ const BlogItem = ({ blog }: { blog: Blog }) => {
 
         <div className="px-4">
           <h4 className="font-medium text-lg xl:text-itemtitle2 text-black hover:text-primary dark:hover:text-primary dark:text-white mt-7.5 mb-3.5">
-            <Link href={`/blog/blog-details`}>
+            <Link href={`/blog/${blog.name}`}>
               {" "}
               {`${title.slice(0, 40)}...`}
             </Link>

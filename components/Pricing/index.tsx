@@ -15,7 +15,7 @@ const Pricing = () => {
               headerInfo={{
                 title: `PRICING PLANS`,
                 subtitle: `Simple Pricing`,
-                description: `Data Oculus provides best CapEx and OpEx prices to help you increase data observability coverage on all your data in a most cost-effective way.`,
+                description: `Our aim is to enable data users expand the footprint of data observability, so the pricing is designed accordingly to increase productivity. It pay for itself in less than a year !`,
               }}
             />
           </div>
@@ -34,8 +34,8 @@ const Pricing = () => {
           <div className="flex flex-wrap lg:flex-nowrap justify-center gap-7.5 xl:gap-12.5">
             {/* <!-- Pricing Item --> */}
             <div className="animate_top md:w-[45%] lg:w-1/3 group relative bg-white dark:bg-blacksection rounded-lg shadow-solid-10 dark:shadow-none border border-stroke dark:border-strokedark p-7.5 xl:p-12.5">
-              <div className="absolute top-9 -right-3.5 -rotate-90 rounded-tl-full rounded-bl-full bg-primary font-medium text-white text-metatitle uppercase py-1.5 px-4.5">
-                Pilot Offer
+              <div className="absolute top-9 -right-3.5 -rotate-90 rounded-tl-full rounded-bl-full bg-meta font-medium text-white text-metatitle uppercase py-1.5 px-4.5">
+                Early Bird
               </div>
               <h3 className="text-black dark:text-white font-bold text-3xl xl:text-sectiontitle3 mb-7.5">
                 $1 k{" "}
@@ -57,7 +57,7 @@ const Pricing = () => {
                     5 data sources
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    1000 Datasets
+                    100 Datasets
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
                     Unlimited Usage
@@ -92,9 +92,9 @@ const Pricing = () => {
 
             {/* <!-- Pricing Item --> */}
             <div className="animate_top md:w-[45%] lg:w-1/3 group relative bg-white dark:bg-blacksection rounded-lg shadow-solid-10 dark:shadow-none border border-stroke dark:border-strokedark p-7.5 xl:p-12.5">
-              {/*<div className="absolute top-7.5 -right-3.5 -rotate-90 rounded-tl-full rounded-bl-full bg-primary font-medium text-white text-metatitle uppercase py-1.5 px-4.5">*/}
-              {/*  popular*/}
-              {/*</div>*/}
+              <div className="absolute top-7.5 -right-3.5 -rotate-90 rounded-tl-full rounded-bl-full bg-primary font-medium text-white text-metatitle uppercase py-1.5 px-4.5">
+                popular
+              </div>
 
               <h3 className="text-black dark:text-white font-bold text-3xl xl:text-sectiontitle3 mb-7.5">
                 $5 k{" "}
@@ -116,7 +116,7 @@ const Pricing = () => {
                     10 data sources
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    5000 Datasets
+                    1000 Datasets
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
                     Unlimited usage

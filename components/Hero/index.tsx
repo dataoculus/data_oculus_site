@@ -19,26 +19,38 @@ const Hero = () => {
                     <div className="flex lg:items-center lg:gap-4.5 xl:gap-18">
                         <div className="pl-32 md:w-1/2 ">
                             <h4 className="text-black dark:text-white text-lg font-medium mb-4.5">
-                                🔥 Datadog for data is here!
+                                🔥 No-Code Solution
                             </h4>
                             <h1 className="text-black dark:text-white text-xl xl:text-hero font-bold pr-10 ">
-                                Real-Time
+                                Real-Time, 360°
                             </h1>
                             {/*<h1 className="text-black dark:text-white text-xl xl:text-hero font-bold pr-10 ">*/}
-                            {/*    Multi-Dimensional,*/}
+                            {/*    Shift-left (at source),*/}
                             {/*</h1>*/}
                             <h1 className="text-black dark:text-white text-xl xl:text-hero font-bold pr-10 ">
                                 Data Observability,
                             </h1>
+                            {/*<h1 className="text-black dark:text-white text-xl xl:text-hero font-bold pr-10 ">*/}
+                            {/*    starting from source (shift-left)*/}
+                            {/*</h1>*/}
                             <h1 className="text-black dark:text-white text-xl xl:text-hero font-bold pr-10 ">
-                                <span className="text-base xl:text-3xl"> with </span> Data Contracts
+                                <span className="text-base xl:text-3xl"> with </span> Prevention
+                            </h1>
+                            <h1 className="text-black dark:text-white text-xl xl:text-hero font-bold pr-10 ">
+                                <span className="text-base xl:text-3xl"> with </span> Remediation
                             </h1>
                             <h1 className="text-black dark:text-white text-lg xl:text-hero font-bold mb-5 ">
                                 <span className="text-base xl:text-3xl"> for </span>
                                 <span
                                     className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1 ml-2.5 ">
                                     <TypeAnimation
-                                        sequence={['Data Scientist', 500, 'Data Engineers', 500, 'Data Stewards', 500, 'Product Managers', 500, 'Business Analyst', 500, 'Everyone !', 500]}
+                                        sequence={[
+                                            'Data Scientist', 500,
+                                            'Data Engineers', 500,
+                                            'Data Stewards', 500,
+                                            'Product Managers', 500,
+                                            'Business Analyst', 500,
+                                            'Everyone !', 500]}
                                         // style={{ fontSize: '2em' }}
                                         // repeat={Infinity}
                                     />
@@ -123,12 +135,14 @@ const Hero = () => {
                                         src="/images/hero/dataoculus-summary-light.png"
                                         alt="Hero"
                                         fill
+                                        style={{borderRadius: '1rem'}}
                                     />
                                     <Image
                                         className="hidden dark:block shadow-solid-l"
                                         src="/images/hero/dataoculus-summary-dark.png"
                                         alt="Hero"
                                         fill
+                                        style={{borderRadius: '1rem'}}
                                     />
                                 </div>
                             </div>

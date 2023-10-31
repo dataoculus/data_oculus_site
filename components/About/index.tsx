@@ -34,12 +34,14 @@ const About = () => {
                   alt="About"
                   className="dark:hidden"
                   fill
+                  style={{borderRadius: '1rem'}}
               />
               <Image
                   src="/images/about/profile-dark.png"
                   alt="About"
                   className="hidden dark:block"
                   fill
+                  style={{borderRadius: '1rem'}}
               />
             </motion.div>
             <motion.div
@@ -336,12 +338,14 @@ const About = () => {
                 alt="About"
                 className="dark:hidden"
                 fill
+                style={{borderRadius: '1rem'}}
               />
               <Image
                 src="/images/about/quality-dark.png"
                 alt="About"
                 className="hidden dark:block"
                 fill
+                style={{borderRadius: '1rem'}}
               />
             </motion.div>
           </div>
@@ -376,12 +380,14 @@ const About = () => {
                   alt="About"
                   className="dark:hidden"
                   fill
+                  style={{borderRadius: '1rem'}}
               />
               <Image
                   src="/images/about/contract-dark.png"
                   alt="About"
                   className="hidden dark:block"
                   fill
+                  style={{borderRadius: '1rem'}}
               />
             </motion.div>
             <motion.div
@@ -436,7 +442,7 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h5 className="text-black dark:text-white text-metatitle2 mb-0.5">
-                    Data Types agreements
+                    Data Types Agreements
                   </h5>
                 </div>
               </div>
@@ -447,7 +453,18 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h5 className="text-black dark:text-white text-metatitle2 mb-0.5">
-                    Data Quality Agreements
+                    Data Quality Based Agreements
+                  </h5>
+                </div>
+              </div>
+              <div className="mt-1 flex items-center gap-5">
+                <div className="w-10 h-10 rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection flex items-center justify-center">
+                  <Image width={26} height={26} src="./images/icon/check-mark-dark.svg" alt="v" className="dark:hidden pl-1"/>
+                  <Image width={26} height={26} src="./images/icon/check-mark-light.svg" alt="v" className="hidden dark:block pl-1"/>
+                </div>
+                <div className="w-3/4">
+                  <h5 className="text-black dark:text-white text-metatitle2 mb-0.5">
+                    Statistical Agreements on data
                   </h5>
                 </div>
               </div>
