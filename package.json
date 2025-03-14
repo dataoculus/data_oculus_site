@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@calcom/embed-react": "^1.5.2",
     "@types/node": "20.2.5",
     "@types/react": "^18.2.12",
     "@types/react-dom": "18.2.4",
+    "antd": "^5.24.2",
     "autoprefixer": "^10.4.14",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
     "framer-motion": "^10.12.16",
+    "lucide-react": "^0.476.0",
     "next": "13.4.4",
     "next-themes": "^0.2.1",
     "postcss": "8.4.24",

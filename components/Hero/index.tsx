@@ -147,9 +147,9 @@ const Hero = () => {
                                 </div>
                             </div>
 
-                            <p className="text-black dark:text-white mt-5 text-right text-xs">
+                            {/* <p className="text-black dark:text-white mt-5 text-right text-xs">
                                 Datadog is trademark of <a href="https://www.datadoghq.com/" >Datadog Inc </a>
-                            </p>
+                            </p> */}
 
                             <div className="mt-5 content-center">
                                 {/*<form onSubmit={handleSubmit}>*/}
