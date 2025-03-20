@@ -198,7 +198,7 @@ const Header = () => {
           {/*</div>*/}
 
           <div className="flex items-center gap-6 mt-7 lg:mt-0">
-            <ThemeToggler />
+
 
             {/*<Link*/}
             {/*  href="https://github.com/NextJSTemplates/solid-nextjs"*/}
@@ -207,13 +207,30 @@ const Header = () => {
             {/*Sign Up 🌟*/}
             {/*</Link>*/}
 
+            {/*<div >*/}
+            {/*  <a href="https://www.producthunt.com/posts/data-oculus?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-data&#0045;oculus"*/}
+            {/*     target="_blank"><img*/}
+            {/*      src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=483865&theme=light"*/}
+            {/*      alt="Data&#0032;Oculus - Data&#0032;Profiling&#0044;&#0032;Quality&#0032;&#0038;&#0032;more&#0032;for&#0032;Public&#0032;Datasets | Product Hunt"*/}
+            {/*      width="250" height="54"/></a>*/}
+            {/*</div>*/}
+
             <Link
-              // href="/auth/signup"
-              href="https://cal.com/data-oculus"
-              className="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-1.5 px-3.5"
+                // href="/auth/signup"
+                href="https://chromewebstore.google.com/detail/data-profiling-quality-an/njbplbbjpeoaajldhihhmfonjlioohep"
+                className="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-1.5 px-3.5"
+            >
+              Chrome Extension
+            </Link>
+
+            <Link
+                href="https://public.dataoculus.app/"
+                className="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-1.5 px-3.5"
             >
               Demo 🔥
             </Link>
+
+            <ThemeToggler/>
           </div>
         </div>
       </div>

@@ -14,14 +14,13 @@ const featuresData: Feature[] = [
     title: "Real-Time",
     description:
         "Detect issues in seconds!, Reduce impact to business with Lowest latency on Data Observability in the market!",
-
   },
   {
     id: 3,
     icon: "/images/icon/icon-02.svg",
     title: "Multi Facet Observability",
     description:
-        "All-In-One solution for ALL your needs; Profiling, Quality, Contracts, Anomalies, Privacy, etc..."
+        "360° visibility via Profiling, Quality, Contracts, Anomalies, Compliance & Privacy !"
   },
   // {
   //   id: 4,
@@ -42,7 +41,7 @@ const featuresData: Feature[] = [
     icon: "/images/icon/icon-03.svg",
     title: "Fully Self Service",
     description:
-        "Complete UI based setup. No need for data engineering team to maintain complex YAML configuration.",
+        "Auto data discovery or catalog integration, intelligent scheduling, zero config setup, custom rules & contracts all using UI.",
   },
 ];
 

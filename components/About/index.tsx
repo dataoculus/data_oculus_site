@@ -62,14 +62,13 @@ const About = () => {
                 viewport={{ once: true }}
                 className="animate_right md:w-1/2"
             >
-              <h4 className="text-black dark:text-white font-medium uppercase">
-                {/*<span className="bg-meta text-white text-metatitle inline-flex rounded-full py-1 px-4.5 mr-4 mb-4 uppercase ">*/}
-                {/*  New*/}
-                {/*</span>{" "}*/}
-                Know your data
+              <h4 className="text-black dark:text-white font-medium">
+                <span className="bg-meta text-white text-metatitle inline-flex rounded-full py-1 px-4.5 mr-4 mb-4 uppercase ">
+                  New
+                </span>{" "}
+                Know Your Data
               </h4>
               <h2 className="relative font-bold text-black dark:text-white text-3xl xl:text-hero mb-6">
-                {/*&nbsp;*/}
                 <span className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1">
                   Data Profile
                 </span>
@@ -408,11 +407,11 @@ const About = () => {
                 viewport={{ once: true }}
                 className="animate_right md:w-1/2"
             >
-              <h4 className="text-black dark:text-white font-medium uppercase">
+              <h4 className="text-black dark:text-white font-medium">
                 <span className="bg-meta text-white text-metatitle inline-flex rounded-full py-1 px-4.5 mr-4 mb-4 uppercase ">
                   New
                 </span>{" "}
-                Best Implementation
+                Full Coverage
               </h4>
               <h2 className="relative font-bold text-black dark:text-white text-3xl xl:text-hero mb-2">
                 {/*&nbsp;*/}

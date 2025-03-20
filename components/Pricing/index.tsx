@@ -174,13 +174,10 @@ const Pricing = () => {
                     Unlimited Datasets
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    Unlimited Photos and Videos
-                  </li>
-                  <li className="text-black dark:text-manatee mb-4 last:mb-0">
                     Exclusive Support
                   </li>
                   <li className="text-black dark:text-manatee mb-4 last:mb-0">
-                    Custom Features
+                    Custom Features & Integrations
                   </li>
                 </ul>
               </div>

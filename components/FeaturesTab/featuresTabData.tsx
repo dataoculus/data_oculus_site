@@ -11,7 +11,7 @@ const featuresTabData: FeatureTab[] = [
   },
   {
     id: "tabTwo",
-    title: "360° Data Observability for your Business.",
+    title: "360° Data observability for all types of data.",
     desc1: `Data Oculus provide multiple types of data observability on your data for all personas of your business.`,
     desc2: ``,
     image: "/images/features/find-easy-light.png",

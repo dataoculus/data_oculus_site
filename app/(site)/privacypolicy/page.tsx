@@ -58,7 +58,8 @@ const PrivacyPolicyPage = () => {
                                                     directors or other managing authority.</p>
                                             </li>
                                             <li>
-                                                <p><strong>Application</strong> refers to DataOculus, the software program
+                                                <p><strong>Application</strong> refers to DataOculus, the software
+                                                    program
                                                     provided by the Company.</p>
                                             </li>
                                             <li>
@@ -116,18 +117,23 @@ const PrivacyPolicyPage = () => {
                                         <h1 className="text-2xl mt-10 mb-6">Collecting and Using Your Personal Data</h1>
                                         <h2 className="text-xl mt-3 mb-1">Types of Data Collected</h2>
                                         <h3 className="text-lg mt-2 mb-1">Personal Data</h3>
-                                        <p>While using Our Service, We may ask You to provide Us with certain personally
-                                            identifiable information that can be used to contact or identify You.
-                                            Personally identifiable information may include, but is not limited to:</p>
+                                        <p>While using Our Service or chrome extension, We dont collect any personally
+                                            identified information that can be used to contact or identify You.
+                                            The only information we collect is the website usage data via Google Analytics for page view and statistics.
+                                        </p>
+                                        <ul className="list-disc">
+                                            <li>
+                                                <p>Site Usage Data</p>
+                                            </li>
+                                        </ul>
+                                        <p> we do access following user info from the Google SSO login which includes,
+                                            but is not limited to:</p>
                                         <ul className="list-disc">
                                             <li>
                                                 <p>Email address</p>
                                             </li>
                                             <li>
                                                 <p>First name and last name</p>
-                                            </li>
-                                            <li>
-                                                <p>Usage Data</p>
                                             </li>
                                         </ul>
                                         <h3 className="text-lg mt-2 mb-1">Usage Data</h3>

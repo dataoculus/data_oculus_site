@@ -15,8 +15,8 @@ const Feature = () => {
           <SectionHeader
             headerInfo={{
               title: "FEATURES",
-              subtitle: "Core Product Pillars",
-              description: `Data Oculus povides 360° observability on your data for everyone`,
+              subtitle: "Core Product Features",
+              description: `Data Oculus provides 360° observability on all your data for everyone`,
             }}
           />
           {/* <!-- Section Title End --> */}
