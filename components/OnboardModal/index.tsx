@@ -83,7 +83,7 @@ const OnboardModal: React.FC<OnboardModalProps> = ({ onClose }) => {
             height={24}
             className="dark:hidden"
           />
-          <span>Onboard Organization</span>
+          <span>Create New Organization</span>
         </div>
       }
       open={true}

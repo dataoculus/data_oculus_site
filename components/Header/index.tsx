@@ -169,25 +169,34 @@ const Header = () => {
                     )}
                   </li>
                 ))}
+                <li>
+                  <Button
+                      href="https://chromewebstore.google.com/detail/data-profiling-quality-an/njbplbbjpeoaajldhihhmfonjlioohep"
+                      // onClick={openModal}
+                      className="bg-meta hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-1.5 px-3.5 whitespace-nowrap"
+                  >
+                    Chrome Extension
+                  </Button>
+                </li>
               </ul>
             </nav>
 
             <div className="flex items-center gap-6 mt-7 lg:mt-0">
-              <ThemeToggler />
 
               <Button
                 onClick={openModal}
                 className="bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-1.5 px-3.5 whitespace-nowrap"
               >
-                Onboard Organization
+                Sign Up
               </Button>
 
-              <Link
-                href="https://cal.com/data-oculus"
-                className="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-1.5 px-3.5"
-              >
-                Demo 🔥
-              </Link>
+              {/*<Link*/}
+              {/*  href="https://cal.com/data-oculus"*/}
+              {/*  className="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-1.5 px-3.5"*/}
+              {/*>*/}
+              {/*  Demo 🔥*/}
+              {/*</Link>*/}
+              <ThemeToggler />
             </div>
           </div>
         </div>
