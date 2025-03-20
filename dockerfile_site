@@ -54,9 +54,8 @@ CMD ["pnpm", "start"]
 # Package first
 # docker build --platform linux/amd64 -t oculus-site-pkgs -f dockerfile_pkgs .
 
-# UI
-# docker build --platform linux/amd64 --build-arg APP_ENV=production -t oculus-site -f dockerfile_site .
-# docker tag oculus-site us-central1-docker.pkg.dev/oculus-prime/dop/oculus-site:latest && docker push us-central1-docker.pkg.dev/oculus-prime/dop/oculus-site:latest
+# Site UI
+# docker build --platform linux/amd64 --build-arg APP_ENV=production -t oculus-site -f dockerfile_site . && docker tag oculus-site us-central1-docker.pkg.dev/oculus-prime/dop/oculus-site:latest && docker push us-central1-docker.pkg.dev/oculus-prime/dop/oculus-site:latest
 
 
 # On Mac
