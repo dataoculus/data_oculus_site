@@ -149,14 +149,13 @@ const OnboardModal: React.FC<OnboardModalProps> = ({ onClose }) => {
         </Form>
       ) : (
         <div className="pt-4">
-          <Cal
-            calLink="data-oculus"
-            style={{ width: "100%", height: "100%", minHeight: "500px" }}
-            config={{
-              name: form.getFieldValue("orgName"),
-              email: form.getFieldValue("adminEmail"),
-            }}
-          />
+          <iframe
+            src={`https://cal.com/data-oculus?name=${encodeURIComponent(form.getFieldValue("orgName") || "")}&email=${encodeURIComponent(form.getFieldValue("adminEmail") || "")}&layout=column_view`}
+            width="100%"
+            height="100%"
+            style={{ minHeight: "500px", border: "none" }}
+            frameBorder="0"
+          ></iframe>
         </div>
       )}
     </Modal>
