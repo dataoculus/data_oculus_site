@@ -261,7 +261,7 @@ const Hero = () => {
                                 >
                                     <div className="content-center">
                                         Checkout Demo: &nbsp;
-                                        <Button href="https://public.dataoculus.app/dataset/GCS.kaggle.life-expectancy-who-updated.Life-Expectancy-Data-Updated/summary"
+                                        <Button href="https://ui.dataoculus.app/public/dataset/GCS.kaggle.life-expectancy-who-updated.Life-Expectancy-Data-Updated/summary"
                                                 type="primary" size="large"
                                                 className="ease-in-out duration-300 text-white text-regular rounded-full py-1.5 px-3.5 whitespace-nowrap">
                                             Public Dataset Observability
