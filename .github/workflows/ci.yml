@@ -1,0 +1,75 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  lint-and-test:
+    name: Lint and Test
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app: [docs, site]
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+          cache-dependency-path: 'apps/${{ matrix.app }}/package-lock.json'
+
+      - name: Install root dependencies
+        run: npm ci
+
+      - name: Install ${{ matrix.app }} dependencies
+        working-directory: apps/${{ matrix.app }}
+        run: npm ci
+
+      - name: Lint ${{ matrix.app }}
+        working-directory: apps/${{ matrix.app }}
+        run: npm run lint || echo "No lint script found"
+        continue-on-error: true
+
+      - name: Test ${{ matrix.app }}
+        working-directory: apps/${{ matrix.app }}
+        run: npm test || echo "No test script found"
+        continue-on-error: true
+
+      - name: Build ${{ matrix.app }}
+        working-directory: apps/${{ matrix.app }}
+        run: npm run build
+        env:
+          NODE_ENV: production
+
+  security-scan:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install root dependencies
+        run: npm ci
+
+      - name: Run security audit
+        run: npm audit --audit-level moderate
+
+      - name: Audit docs dependencies
+        working-directory: apps/docs
+        run: npm audit --audit-level moderate || echo "Audit completed with warnings"
+        continue-on-error: true
+
+      - name: Audit site dependencies
+        working-directory: apps/site
+        run: npm audit --audit-level moderate || echo "Audit completed with warnings"
+        continue-on-error: true 

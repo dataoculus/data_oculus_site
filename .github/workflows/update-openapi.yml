@@ -1,0 +1,35 @@
+name: Update OpenAPI Specification
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Run daily at midnight
+  workflow_dispatch:
+
+jobs:
+  update-openapi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch and process OpenAPI spec
+        working-directory: apps/docs
+        run: |
+          # Fetch the OpenAPI spec
+          curl -H "Authorization: Bearer ${{ secrets.OPENAPI_BEARER_TOKEN }}" \
+               https://api.dataoculus.app/public/api/openapi.json > temp_openapi.json
+          
+          # Replace {id} with id in the file
+          sed -i 's/{id}/id/g' temp_openapi.json
+          sed -i 's/{datasetId}/datasetId/g' temp_openapi.json
+          
+          # Update the openapi.json file
+          mv temp_openapi.json openapi.json
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add apps/docs/openapi.json
+          git commit -m "Update OpenAPI specification" || exit 0
+          git push 
