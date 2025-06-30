@@ -1,0 +1,64 @@
+# Use Node.js 18-alpine as base image
+FROM node:20-alpine AS node_alpine_base_image
+
+ARG SERVICE_PORT=80
+ARG APP_ENV=production
+
+ENV PORT ${SERVICE_PORT}
+ENV NODE_ENV=${APP_ENV}
+# Next.js collects completely anonymous telemetry data about general usage.
+# but disabling telemetry
+ENV NEXT_TELEMETRY_DISABLED 1
+
+EXPOSE ${PORT}
+
+# Install PNPM package manager
+RUN npm install -g pnpm
+
+FROM oculus-site-pkgs as nm_modules
+
+FROM node_alpine_base_image AS builder
+WORKDIR /app
+COPY --from=nm_modules /app/node_modules ./node_modules
+# Copy entire project data except one from dockerignore
+COPY . .
+
+RUN pnpm build
+RUN pnpm prune --prod
+
+## Production image, copy all the files and run next
+FROM node_alpine_base_image AS runner
+WORKDIR /app
+# COPY --from=builder /app/next.config.js ./
+COPY --from=builder /app/package.json ./package.json
+# do we need pnpm lock file as well?
+COPY --from=builder /app/pnpm-lock.yaml ./pnpm-lock.yaml
+# COPY --from=builder /app/.env* ./
+# COPY --from=builder /app/*.config.js ./
+# COPY --from=builder /app/.next ./.next
+# COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+# COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/node_modules ./node_modules
+
+# To Start the app
+CMD ["pnpm", "start"]
+
+# useful commands for reference
+# NOTE: dont use APP_ENV to be production, it will not fetch all the required packages for pnpm build.
+
+# On production:
+
+# Package first
+# docker build --platform linux/amd64 -t oculus-site-pkgs -f dockerfile_pkgs .
+
+# Site UI
+# docker build --platform linux/amd64 --build-arg APP_ENV=production -t oculus-site -f dockerfile_site . && docker tag oculus-site us-central1-docker.pkg.dev/oculus-prime/dop/oculus-site:latest && docker push us-central1-docker.pkg.dev/oculus-prime/dop/oculus-site:latest
+
+
+# On Mac
+# package
+# docker build --build-arg APP_ENV=development -t dop-ui-pkgs-mac -f dockerfile_pkgs .
+# docker build --build-arg APP_ENV=production -t dop-ui-app-mac-prod -f dockerfile_ui .

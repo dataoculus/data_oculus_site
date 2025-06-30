@@ -1,0 +1,27 @@
+# Use Node.js 18-alpine as base image
+FROM node:20-alpine AS node_alpine_base_image
+
+# even for prod, use this flag, to get all dependencies, the actuall APP container will prune non prod stuff.
+#ARG APP_ENV=development
+#ENV NODE_ENV=${APP_ENV}
+ENV NODE_ENV=development
+# Next.js collects completely anonymous telemetry data about general usage.
+# but disabling telemetry
+ENV NEXT_TELEMETRY_DISABLED 1
+
+# Install PNPM package manager
+RUN npm install -g pnpm
+
+# install packages
+FROM node_alpine_base_image AS deps
+WORKDIR /app
+RUN apk add --no-cache libc6-compat
+COPY package.json pnpm-lock.yaml ./
+# If you patched any package, include patches before install too
+#COPY patches patches
+RUN pnpm fetch
+RUN pnpm install --verbose # because pnpm build --> next build requires types from devDependencies, we should not use --prod here,  use prune --prod later.
+
+
+# refer to dockerfile_site
+
