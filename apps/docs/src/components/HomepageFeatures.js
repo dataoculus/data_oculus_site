@@ -63,10 +63,10 @@ const QuickStartOptions = [
     primary: true,
   },
   {
-    title: "Try DataOculus Sandbox",
-    description: "Explore our features with a pre-configured demo environment",
-    link: "/docs/sandbox",
-    buttonText: "Try Demo",
+    title: "Explore Features",
+    description: "Discover all the powerful capabilities DataOculus offers",
+    link: "/docs/features",
+    buttonText: "View Features",
     primary: false,
   },
 ];
