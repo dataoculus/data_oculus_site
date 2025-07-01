@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /team
+
+User-agent: ia_archiver
+Disallow: /team
+
+User-agent: archive.org_bot
+Disallow: /team
