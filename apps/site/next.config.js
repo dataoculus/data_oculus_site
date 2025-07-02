@@ -9,8 +9,8 @@ const nextConfig = {
   // Configure for GitHub Pages deployment
   // If deploying to a custom domain, leave basePath empty
   // If deploying to username.github.io/repository-name, use the repository name
-  basePath: process.env.GITHUB_PAGES ? "/data_oculus_site" : "",
-  assetPrefix: process.env.GITHUB_PAGES ? "/data_oculus_site" : "",
+  basePath: process.env.GITHUB_PAGES ? "" : "",
+  assetPrefix: process.env.GITHUB_PAGES ? "" : "",
   
   // Disable image optimization for static export
   images: {
@@ -24,11 +24,6 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "www.dataoculus.app",
-        port: "",
-      },
-      {
-        protocol: "https",
-        hostname: "dataoculus.github.io",
         port: "",
       },
       {
