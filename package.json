@@ -13,6 +13,8 @@
     "build": "npm run build:docs && npm run build:site",
     "build:docs": "cd apps/docs && npm run build",
     "build:site": "cd apps/site && npm run build",
+    "build:github": "npm run build:docs && npm run build:site:github",
+    "build:site:github": "cd apps/site && npm run build:github",
     "start": "concurrently \"npm run start:docs\" \"npm run start:site\"",
     "start:docs": "cd apps/docs && npm run start",
     "start:site": "cd apps/site && npm run start",
