@@ -24,6 +24,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
+          routeBasePath: "/",
           // Please change this to your repo.
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
@@ -55,32 +56,27 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "intro",
+            to: "/intro",
             position: "left",
             label: "Getting Started",
           },
           {
-            type: "doc",
-            docId: "configuring-datastore/index",
+            to: "/configuring-datastore",
             position: "left",
             label: "Configure Datastore",
           },
           {
-            type: "doc",
-            docId: "onboarding-catalog/index",
+            to: "/onboarding-catalog",
             position: "left",
             label: "Data Catalog",
           },
           {
-            type: "doc",
-            docId: "features/index",
+            to: "/features",
             position: "left",
             label: "Features",
           },
           {
-            type: "doc",
-            docId: "product/index",
+            to: "/product",
             position: "left",
             label: "Product",
           },
