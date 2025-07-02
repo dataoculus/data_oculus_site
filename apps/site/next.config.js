@@ -36,6 +36,31 @@ const nextConfig = {
   
   // Ensure trailing slashes for GitHub Pages
   trailingSlash: process.env.GITHUB_PAGES ? true : false,
+
+  // Webpack configuration for swagger-ui dependencies
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+        crypto: false,
+        stream: false,
+        buffer: false,
+        util: false,
+      };
+    }
+    
+    // Handle swagger-ui-react specific issues
+    config.externals = config.externals || [];
+    config.externals.push({
+      'formdata-node': 'formdata-node',
+      'btoa': 'btoa',
+      'traverse': 'traverse'
+    });
+
+    return config;
+  },
 };
 
 module.exports = nextConfig;
