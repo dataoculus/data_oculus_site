@@ -11,7 +11,7 @@ const config = {
   title: "DataOculus",
   tagline: "Your Complete Data Management Platform",
   url: "https://your-dataoculus-site.com",
-  baseUrl: "/data_oculus_site/docs/",
+  baseUrl: "/docs/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",

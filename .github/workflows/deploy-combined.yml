@@ -50,7 +50,7 @@ jobs:
       
       - name: Build site for GitHub Pages
         working-directory: apps/site
-        run: npm run build:github
+        run: npm run build
         env:
           NODE_ENV: production
           GITHUB_PAGES: true
