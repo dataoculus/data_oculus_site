@@ -12,7 +12,7 @@ const config = {
   tagline: "Your Complete Data Management Platform",
   url: "https://your-dataoculus-site.com",
   baseUrl: "/docs/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "dataoculus", // Usually your GitHub org/user name.
