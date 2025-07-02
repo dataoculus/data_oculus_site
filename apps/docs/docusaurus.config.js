@@ -101,15 +101,15 @@ const config = {
             items: [
               {
                 label: "Getting Started",
-                to: "/docs/intro",
+                to: "/intro",
               },
               {
                 label: "Configure Datastore",
-                to: "/docs/configuring-datastore",
+                to: "/configuring-datastore",
               },
               {
                 label: "Data Catalog",
-                to: "/docs/onboarding-catalog",
+                to: "/onboarding-catalog",
               },
             ],
           },
@@ -118,12 +118,12 @@ const config = {
             items: [
               {
                 label: "Features",
-                to: "/docs/features",
+                to: "/features",
               },
 
               {
                 label: "Product Overview",
-                to: "/docs/product",
+                to: "/product",
               },
               {
                 label: "API Reference",
