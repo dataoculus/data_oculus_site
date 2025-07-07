@@ -1,39 +1,36 @@
 {
-  "name": "data-oculus-website",
-  "version": "0.1.0",
+  "name": "@dataoculus/monorepo",
+  "version": "1.0.0",
   "private": true,
+  "description": "DataOculus monorepo containing docs and site applications",
+  "workspaces": [
+    "apps/*"
+  ],
   "scripts": {
-    "dev": "next dev -p 3001",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@calcom/embed-react": "^1.5.2",
-    "@types/node": "20.2.5",
-    "@types/react": "^18.2.12",
-    "@types/react-dom": "18.2.4",
-    "antd": "^5.24.4",
-    "autoprefixer": "^10.4.14",
-    "eslint": "8.41.0",
-    "eslint-config-next": "13.4.4",
-    "framer-motion": "^10.12.16",
-    "lucide-react": "^0.476.0",
-    "next": "13.4.4",
-    "next-themes": "^0.2.1",
-    "postcss": "8.4.24",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-hot-toast": "^2.4.1",
-    "react-type-animation": "^3.1.0",
-    "styled-components": "^6.0.3",
-    "swiper": "^9.3.2",
-    "tailwindcss": "3.3.2",
-    "typescript": "^5.1.3",
-    "react-text-transition": "3.1.0",
-    "antd-style": "3.7.1"
+    "dev": "concurrently \"npm run dev:docs\" \"npm run dev:site\"",
+    "dev:docs": "cd apps/docs && npm run dev",
+    "dev:site": "cd apps/site && npm run dev",
+    "build": "npm run build:docs && npm run build:site",
+    "build:docs": "cd apps/docs && npm run build",
+    "build:site": "cd apps/site && npm run build",
+    "build:github": "npm run build:docs && npm run build:site:github",
+    "build:site:github": "cd apps/site && npm run build:github",
+    "start": "concurrently \"npm run start:docs\" \"npm run start:site\"",
+    "start:docs": "cd apps/docs && npm run start",
+    "start:site": "cd apps/site && npm run start",
+    "lint": "npm run lint:docs && npm run lint:site",
+    "lint:docs": "cd apps/docs && npm run lint",
+    "lint:site": "cd apps/site && npm run lint",
+    "clean": "rm -rf apps/*/node_modules apps/*/.next apps/*/build apps/*/dist node_modules",
+    "install:all": "npm install && npm run install:docs && npm run install:site",
+    "install:docs": "cd apps/docs && npm install",
+    "install:site": "cd apps/site && npm install"
   },
   "devDependencies": {
-    "@types/bcrypt": "^5.0.0"
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
-}
+} 
