@@ -100,18 +100,6 @@ The repository includes automated deployment workflows:
 #### Manual Deployment
 All deployment workflows can be triggered manually from the GitHub Actions tab.
 
-### Local Testing of GitHub Pages Build
-
-```bash
-# Test docs build (always static)
-cd apps/docs
-npm run build
-
-# Test site build for GitHub Pages
-cd apps/site
-GITHUB_PAGES=true npm run build:github
-```
-
 ### Configuration
 
 #### GitHub Pages Setup
