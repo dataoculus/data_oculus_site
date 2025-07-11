@@ -1,209 +1,220 @@
-# GitHub Actions Workflows
+# DataOculus Monorepo
 
-This directory contains the GitHub Actions workflows for the DataOculus monorepo. All workflows have been abstracted to the top level to provide centralized CI/CD management.
+This monorepo contains the DataOculus applications:
 
-## Workflows
+- **Apps/Docs** (`apps/docs`): Docusaurus documentation site
+- **Apps/Site** (`apps/site`): Main Next.js website
 
-### 🚀 Deployment Workflows
-
-#### `deploy-docs.yml`
-- **Trigger**: Push to `main` branch with changes to `apps/docs/**` or manual dispatch
-- **Purpose**: Builds and deploys the documentation site to GitHub Pages
-- **Deploy URL**: `https://<username>.github.io/<repository>/` (docs subdirectory)
-- **Process**:
-  1. Installs dependencies for both root and docs app
-  2. Builds the Docusaurus documentation site
-  3. Deploys to GitHub Pages
-
-#### `deploy-site.yml`
-- **Trigger**: Push to `main` branch with changes to `apps/site/**` or manual dispatch
-- **Purpose**: Builds and deploys the Next.js marketing site to GitHub Pages
-- **Deploy URL**: `https://<username>.github.io/<repository>/` (main site)
-- **Process**:
-  1. Installs dependencies for both root and site app
-  2. Builds the Next.js site with static export
-  3. Adds `.nojekyll` file for proper GitHub Pages routing
-  4. Deploys to GitHub Pages
-
-### 🔄 Maintenance Workflows
-
-#### `update-openapi.yml`
-- **Trigger**: Daily at midnight (cron) or manual dispatch
-- **Purpose**: Automatically updates the OpenAPI specification from the DataOculus API
-- **Process**:
-  1. Fetches the latest OpenAPI spec from `https://api.dataoculus.app/public/api/openapi.json`
-  2. Processes the file to replace placeholders
-  3. Commits and pushes changes to the docs app
-
-### 🧪 Quality Assurance Workflows
-
-#### `ci.yml`
-- **Trigger**: Push to `main`/`develop` branches or pull requests
-- **Purpose**: Continuous integration testing for both apps
-- **Process**:
-  1. **Matrix Strategy**: Tests both `docs` and `site` apps in parallel
-  2. **Lint and Test**: Runs linting and testing for each app
-  3. **Build Validation**: Ensures both apps build successfully
-  4. **Security Scan**: Runs npm audit on all dependencies
-
-## GitHub Pages Setup
-
-### Repository Configuration
-
-1. **Enable GitHub Pages**:
-   - Go to your repository Settings
-   - Navigate to "Pages" section
-   - Set Source to "GitHub Actions"
-
-2. **Site Deployment Options**:
-   
-   **Option A: Deploy Site to Root Domain**
-   - The site will be available at `https://<username>.github.io/<repository>/`
-   - Current configuration (recommended)
-   
-   **Option B: Deploy to Custom Domain**
-   - Update `next.config.js` to remove `basePath` and `assetPrefix`
-   - Add your custom domain in repository settings
-   - The site will be available at your custom domain
-
-### Environment Variables
-
-The Next.js site automatically configures itself based on environment variables:
-
-- `GITHUB_PAGES=true` - Enables static export mode
-- `GITHUB_REPOSITORY` - Used to set correct base paths
-- `NODE_ENV=production` - Production build optimization
-
-### Dual Deployment Strategy
-
-Both docs and site can be deployed to GitHub Pages:
-
-1. **Docs**: Deploys to `/docs` path or subdomain
-2. **Site**: Deploys to root domain or custom domain
-3. **Conflicts**: If both deploy to the same path, the last deployment wins
-
-**Recommended Setup**:
-- Use separate repositories for separate domains
-- Or deploy docs to a subdirectory/subdomain
-- Or use different branches for different deployments
-
-## Monorepo Structure
-
-The workflows are designed to work with the monorepo structure:
+## Project Structure
 
 ```
-monorepo/
+DataOculus/
 ├── .github/
-│   └── workflows/          # ← Centralized workflows
-│       ├── ci.yml
-│       ├── deploy-docs.yml  # → GitHub Pages (docs)
-│       ├── deploy-site.yml  # → GitHub Pages (site)
-│       └── update-openapi.yml
+│   └── workflows/     # GitHub Actions workflows
 ├── apps/
-│   ├── docs/              # Docusaurus documentation
-│   └── site/              # Next.js marketing site
-└── package.json           # Root package.json with monorepo scripts
+│   ├── docs/          # Docusaurus documentation (Port 3000)
+│   ├── site/          # Next.js main website (Port 3001)
+│   └── ...
+└── package.json       # Root workspace configuration
 ```
 
-## Key Features
+## Getting Started
 
-### Path-Based Triggers
-- Workflows only run when relevant files change
-- `apps/docs/**` changes trigger docs deployment
-- `apps/site/**` changes trigger site deployment
+### Prerequisites
 
-### Efficient Caching
-- Node.js setup with npm caching per app
-- Cache keys based on individual app `package-lock.json` files
+- Node.js >=18.0.0
+- npm >=9.0.0
 
-### Working Directory Management
-- Each workflow step specifies the correct working directory
-- Root dependencies installed first, then app-specific dependencies
+### Installation
 
-### Matrix Strategy
-- CI workflow uses matrix strategy to test both apps efficiently
-- Parallel execution reduces total build time
-
-### GitHub Pages Optimization
-- Static export for Next.js site
-- Proper asset handling with base paths
-- `.nojekyll` file to bypass Jekyll processing
-- Automatic repository name detection
-
-## Usage
-
-### Local Development
 ```bash
-# Start both apps in development
+# Install dependencies for all workspaces
+npm install
+```
+
+### Development
+
+#### Run both applications simultaneously:
+```bash
 npm run dev
+```
 
-# Start individual apps
+This will start:
+- Documentation site on http://localhost:3000
+- Main website on http://localhost:3001
+
+#### Run applications individually:
+
+**Documentation site only:**
+```bash
 npm run dev:docs
-npm run dev:site
+```
 
-# Build both apps
+**Main website only:**
+```bash
+npm run dev:site
+```
+
+### Building
+
+#### Build all applications:
+```bash
+npm run build
+```
+
+#### Build individually:
+```bash
+# Build documentation
+npm run build:docs
+
+# Build main website
+npm run build:site
+
+# Build for GitHub Pages
+npm run build:docs    # Docs (always static)
+cd apps/site && npm run build:github  # Site (static export)
+```
+
+### Production
+
+#### Start applications in production:
+```bash
+# Start documentation site
+npm run start:docs
+
+# Start main website
+npm run start:site
+```
+
+## Deployment
+
+### Automated Deployment (GitHub Actions)
+
+The repository includes automated deployment workflows:
+
+#### GitHub Pages Deployment
+- **Documentation**: Automatically deploys to GitHub Pages on push to `main`
+- **Site**: Automatically deploys to GitHub Pages with static export
+- **URL**: `https://<username>.github.io/<repository>/`
+
+#### Manual Deployment
+All deployment workflows can be triggered manually from the GitHub Actions tab.
+
+### Local Testing of GitHub Pages Build
+
+```bash
+# Test docs build (always static)
+cd apps/docs
 npm run build
 
-# Test GitHub Pages build locally
+# Test site build for GitHub Pages
 cd apps/site
 GITHUB_PAGES=true npm run build:github
 ```
 
-### Manual Workflow Triggers
-All workflows support manual triggering via GitHub's "workflow_dispatch" event. Go to the Actions tab in your repository and click "Run workflow".
+### Configuration
 
-## Environment Variables & Secrets
+#### GitHub Pages Setup
+1. Go to repository Settings → Pages
+2. Set Source to "GitHub Actions"
+3. Workflows will automatically deploy on push to `main`
 
-### Required Secrets
-- `OPENAPI_BEARER_TOKEN`: Bearer token for accessing the DataOculus API (used in `update-openapi.yml`)
-
-### Automatic Environment Variables
-- `GITHUB_REPOSITORY`: Repository name (automatically provided by GitHub)
-- `GITHUB_PAGES`: Set to `true` in deployment workflows
-- `NODE_ENV`: Set to `production` for builds
-
-## Deployment Paths
-
-### Default GitHub Pages Paths
-- **Repository**: `https://<username>.github.io/<repository>/`
-- **Site**: `https://<username>.github.io/<repository>/` (root)
-- **Docs**: `https://<username>.github.io/<repository>/docs/` (if using subdirectory)
-
-### Custom Domain Configuration
-To use a custom domain:
-1. Add `CNAME` file to the `public` directory
-2. Configure DNS to point to GitHub Pages
-3. Update `next.config.js` to remove base paths
+#### Custom Domain (Optional)
+To use a custom domain instead of GitHub Pages default:
+1. Update `apps/site/next.config.js` to remove base paths
+2. Add CNAME file to `apps/site/public/`
+3. Configure DNS settings
 4. Enable custom domain in repository settings
 
-## Adding New Apps
+## Available Scripts
 
-To add a new app to the monorepo:
+| Script | Description |
+|--------|-------------|
+| `npm run dev` | Start both apps in development mode |
+| `npm run dev:docs` | Start documentation site only (port 3000) |
+| `npm run dev:site` | Start main website only (port 3001) |
+| `npm run build` | Build all applications |
+| `npm run build:docs` | Build documentation site |
+| `npm run build:site` | Build main website |
+| `npm run start` | Start both apps in production mode |
+| `npm run start:docs` | Start documentation in production mode |
+| `npm run start:site` | Start website in production mode |
+| `npm run lint` | Run linting for all workspaces |
+| `npm run clean` | Clean all build artifacts and node_modules |
+| `npm run install:all` | Install dependencies for all apps |
 
-1. Create the app in `apps/new-app/`
-2. Update the CI workflow matrix to include the new app
-3. Create deployment workflow for the new app
-4. Add scripts to root `package.json`
+## Workspace Management
 
-## Troubleshooting
+This monorepo uses npm workspaces. Each application in the `apps/` directory is a separate workspace with its own `package.json` and dependencies.
 
-### Common Issues
+### Working with workspaces:
 
-1. **Build failures**: Check that all dependencies are properly installed
-2. **Path issues**: Ensure working directories are correctly specified
-3. **Asset loading**: Verify base paths are correctly configured for GitHub Pages
-4. **Routing issues**: Add `.nojekyll` file and ensure trailing slashes
+```bash
+# Run a command in a specific workspace
+npm run <script> --workspace=apps/docs
+npm run <script> --workspace=apps/site
 
-### GitHub Pages Specific Issues
+# Install a dependency in a specific workspace
+npm install <package> --workspace=apps/docs
+npm install <package> --workspace=apps/site
 
-1. **404 errors**: Check base path configuration in `next.config.js`
-2. **Asset not loading**: Verify asset prefix matches repository name
-3. **Routing problems**: Ensure `trailingSlash: true` for static export
-4. **Jekyll processing**: Ensure `.nojekyll` file is present
+# Install a dependency for all workspaces
+npm install <package> --workspaces
+```
 
-### Debugging
+## Ports
 
-- Check the "Actions" tab in your repository for detailed logs
-- Each workflow step provides detailed output
-- Use `workflow_dispatch` to manually test workflows
-- Test GitHub Pages builds locally with environment variables 
+- **Documentation**: http://localhost:3000
+- **Main Website**: http://localhost:3001
+
+## GitHub Actions
+
+The repository includes comprehensive CI/CD workflows:
+
+- **Continuous Integration**: Automated testing and linting
+- **Documentation Deployment**: Automatic GitHub Pages deployment
+- **Site Deployment**: Next.js static export to GitHub Pages
+- **OpenAPI Updates**: Daily API specification updates
+
+See [`.github/README.md`](.github/README.md) for detailed workflow documentation.
+
+## Development Workflow
+
+1. **Clone the repository**
+2. **Install dependencies**: `npm install`
+3. **Start development**: `npm run dev`
+4. **Make changes** in the appropriate app directory
+5. **Test locally**: `npm run build`
+6. **Commit and push**: Automatic deployment on push to `main`
+
+## Contributing
+
+1. Make your changes in the appropriate workspace
+2. Test locally using the development scripts
+3. Build to ensure everything works correctly
+4. Submit your pull request
+
+## Architecture
+
+- **Monorepo**: Single repository containing multiple related applications
+- **Workspaces**: Each app is an independent workspace with its own dependencies
+- **Shared Dependencies**: Common dependencies are hoisted to the root when possible
+- **Independent Deployment**: Each app can be built and deployed independently
+- **Centralized CI/CD**: All GitHub Actions workflows managed at the repository root
+
+## Environment Support
+
+### Development
+- Local development with hot reloading
+- Independent port configuration
+- Shared development dependencies
+
+### Production
+- Optimized builds for each application
+- Static export support for GitHub Pages
+- Docker deployment support (standalone mode)
+
+### GitHub Pages
+- Automatic static export for Next.js
+- Proper asset path configuration
+- Custom domain support 
