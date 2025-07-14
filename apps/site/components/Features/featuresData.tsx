@@ -22,20 +22,20 @@ const featuresData: Feature[] = [
     description:
         "360° visibility via Profiling, Quality, Contracts, Anomalies, Compliance & Privacy !"
   },
-  // {
-  //   id: 4,
-  //   icon: "/images/icon/icon-04.svg",
-  //   title: "Data Quality",
-  //   description:
-  //     "Measure all dimensions of data quality",
-  // },
-  // {
-  //   id: 5,
-  //   icon: "/images/icon/icon-05.svg",
-  //   title: "Data Contracts",
-  //   description:
-  //     "is data good enough for me? Evaluate data health as per user's data contracts",
-  // },
+  {
+    id: 4,
+    icon: "/images/icon/icon-04.svg",
+    title: "AI Enabled",
+    description:
+      "Automatically create Data Quality rules by AI",
+  },
+  {
+    id: 5,
+    icon: "/images/icon/icon-05.svg",
+    title: "Data Contracts",
+    description:
+      "Capture consumer specific requirements into their own data contract that consumer's program can leverage over API to run with confidence.",
+  },
   {
     id: 6,
     icon: "/images/icon/icon-03.svg",

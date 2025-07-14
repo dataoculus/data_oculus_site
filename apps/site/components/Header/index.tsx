@@ -176,6 +176,7 @@ const Header = () => {
                       className="bg-meta hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-1.5 px-3.5 whitespace-nowrap"
                   >
                     Chrome Extension
+                    <sup>for Kaggle</sup>
                   </Button>
                 </li>
               </ul>

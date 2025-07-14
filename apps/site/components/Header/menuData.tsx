@@ -1,17 +1,50 @@
 import { Menu } from "@/types/menu";
 
 const menuData: Menu[] = [
+  // {
+  //   id: 1,
+  //   title: "Home",
+  //   newTab: false,
+  //   path: "/"
+  // },
+
   {
     id: 1,
-    title: "Home",
+    title: "Product Features",
     newTab: false,
-    path: "/"
+    path: "/#features",
+    submenu: [
+      {
+        id: 1.1,
+        title: "Real-Time",
+        newTab: false,
+        path: "/#features",
+      },
+      {
+        id: 1.2,
+        title: "360° & Multi Facet",
+        newTab: false,
+        path: "/#features",
+      },
+      {
+        id: 1.3,
+        title: "Fully Self-Serve",
+        newTab: false,
+        path: "/#features",
+      },
+      {
+        id: 1.4,
+        title: "AI Enabled",
+        newTab: false,
+        path: "/#features",
+      }
+    ]
   },
   {
     id: 2,
-    title: "Features",
+    title: "Docs",
     newTab: false,
-    path: "/#features"
+    path: "/docs"
   },
   {
     id: 2.1,
@@ -80,19 +113,14 @@ const menuData: Menu[] = [
     title: "Contact Us",
     newTab: false,
     path: "/support"
-  },
-  {
-    id: 5,
-    title: "Team",
-    newTab: false,
-    path: "/team"
-  },
-  {
-    id: 6,
-    title: "Docs",
-    newTab: false,
-    path: "/docs"
   }
+  // {
+  //   id: 6,
+  //   title: "Team",
+  //   newTab: false,
+  //   path: "/team"
+  // },
+
 ];
 
 export default menuData;

@@ -3,10 +3,9 @@ import React, {useState} from "react";
 import Image from "next/image";
 
 import {TypeAnimation} from "react-type-animation";
-import TextTransition, { presets } from 'react-text-transition';
-import Link from "next/link";
-import {Button, ConfigProvider, Space} from "antd";
-import { createStyles } from 'antd-style';
+import TextTransition, {presets} from 'react-text-transition';
+import {Button, ConfigProvider} from "antd";
+import {createStyles} from 'antd-style';
 // import {AntDesignOutlined} from "@ant-design/icons";
 
 
@@ -51,13 +50,60 @@ const Hero = () => {
         `,
     }));
 
-    const { styles } = useStyle();
+    const {styles} = useStyle();
 
     return (
         <>
             <section className="pt-35 md:pt-40 xl:pt-46 pb-20 xl:pb-25 overflow-hidden">
                 <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
                     <div className="flex lg:items-center lg:gap-4.5 xl:gap-18">
+                        <div className="animate_right md:w-1/2 hidden lg:block pr-10">
+                            <div className="relative 2xl:-mr-7.5 mt-20">
+                                <Image
+                                    src="/images/shape/shape-01.png"
+                                    alt="shape"
+                                    width={46}
+                                    height={246}
+                                    className="absolute -left-11.5 top-0"
+                                />
+                                <Image
+                                    src="/images/shape/shape-02.svg"
+                                    alt="shape"
+                                    width={36.9}
+                                    height={36.7}
+                                    className="absolute right-0 bottom-0 z-10"
+                                />
+                                <Image
+                                    src="/images/shape/shape-03.svg"
+                                    alt="shape"
+                                    width={21.64}
+                                    height={21.66}
+                                    className="absolute -right-6.5 bottom-0 z-1"
+                                />
+                                <div className=" relative aspect-[700/444] w-full">
+                                    <Image
+                                        className="dark:hidden shadow-solid-l"
+                                        src="/images/hero/dataoculus-summary-light.png"
+                                        alt="Hero"
+                                        fill
+                                        style={{borderRadius: '1rem'}}
+                                    />
+                                    <Image
+                                        className="hidden dark:block shadow-solid-l"
+                                        src="/images/hero/dataoculus-summary-dark.png"
+                                        alt="Hero"
+                                        fill
+                                        style={{borderRadius: '1rem'}}
+                                    />
+                                </div>
+                            </div>
+
+
+                            {/* <p className="text-black dark:text-white mt-5 text-right text-xs">
+                                Datadog is trademark of <a href="https://www.datadoghq.com/" >Datadog Inc </a>
+                            </p> */}
+
+                        </div>
                         <div className="pl-8 md:w-1/2 ">
                             <h4 className="text-black dark:text-white text-lg font-medium mb-4.5">
                                 🔥 Real-Time & End to End
@@ -209,75 +255,26 @@ const Hero = () => {
                             {/*        Try for free, no credit card required.*/}
                             {/*    </p>*/}
                             {/*</div>*/}
-                        </div>
-
-                        <div className="animate_right md:w-1/2 hidden lg:block pr-10">
-
-                            <div className="relative 2xl:-mr-7.5">
-                                <Image
-                                    src="/images/shape/shape-01.png"
-                                    alt="shape"
-                                    width={46}
-                                    height={246}
-                                    className="absolute -left-11.5 top-0"
-                                />
-                                <Image
-                                    src="/images/shape/shape-02.svg"
-                                    alt="shape"
-                                    width={36.9}
-                                    height={36.7}
-                                    className="absolute right-0 bottom-0 z-10"
-                                />
-                                <Image
-                                    src="/images/shape/shape-03.svg"
-                                    alt="shape"
-                                    width={21.64}
-                                    height={21.66}
-                                    className="absolute -right-6.5 bottom-0 z-1"
-                                />
-                                <div className=" relative aspect-[700/444] w-full">
-                                    <Image
-                                        className="dark:hidden shadow-solid-l"
-                                        src="/images/hero/dataoculus-summary-light.png"
-                                        alt="Hero"
-                                        fill
-                                        style={{borderRadius: '1rem'}}
-                                    />
-                                    <Image
-                                        className="hidden dark:block shadow-solid-l"
-                                        src="/images/hero/dataoculus-summary-dark.png"
-                                        alt="Hero"
-                                        fill
-                                        style={{borderRadius: '1rem'}}
-                                    />
-                                </div>
-                            </div>
-
-                            <div className="mt-5 flex float-right ">
+                            <div className="flex pl-30 ">
                                 <ConfigProvider
                                     button={{
                                         className: styles.linearGradientButton,
                                     }}
                                 >
-                                    <div className="content-center">
-                                        Checkout Demo: &nbsp;
-                                        <Button href="https://ui.dataoculus.app/public/dataset/GCS.kaggle.life-expectancy-who-updated.Life-Expectancy-Data-Updated/summary"
-                                                type="primary" size="large"
-                                                className="ease-in-out duration-300 text-white text-regular rounded-full py-1.5 px-3.5 whitespace-nowrap">
+                                    <div>
+                                        Live Demo: &nbsp;
+                                        <Button
+                                            href="https://ui.dataoculus.app/public/dataset/GCS.kaggle.life-expectancy-who-updated.Life-Expectancy-Data-Updated/summary"
+                                            type="primary" size="large"
+                                            className="ease-in-out duration-300 text-white text-regular rounded-full py-1.5 px-3.5 whitespace-nowrap">
                                             Public Dataset Observability
                                         </Button>
                                     </div>
 
                                 </ConfigProvider>
                             </div>
-
-
-                            {/* <p className="text-black dark:text-white mt-5 text-right text-xs">
-                                Datadog is trademark of <a href="https://www.datadoghq.com/" >Datadog Inc </a>
-                            </p> */}
-
-
                         </div>
+
 
                     </div>
                 </div>
