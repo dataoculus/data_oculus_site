@@ -3,7 +3,8 @@ export default function Head() {
     <>
       <title> Data Oculus Company Page</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <meta name="description" content="Built with Next.js and TypeScript" />
+      {/* Updated meta description for better SEO */}
+      <meta name="description" content="Data Oculus - Real-Time Data Observability Platform" />
       <link rel="icon" href="/images/favicon.ico" />
     </>
   );
