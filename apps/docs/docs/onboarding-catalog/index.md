@@ -2,9 +2,10 @@
 sidebar_position: 3
 ---
 
-# Onboarding Your Data Catalog
+# Integrate with your Data Catalog
 
-Transform your data infrastructure into a comprehensive, searchable, and governed data catalog. DataOculus provides a user-friendly interface to configure, manage, and monitor all your data catalog integrations.
+Bring your own data catalog to start monitoring assets.
+DataOculus provides a user-friendly interface to configure, manage, and monitor all your data catalog assets at one place.
 
 ![Data Catalog Overview](./images/catalog-overview.png)
 *DataOculus Metadata Catalog dashboard showing all configured catalog providers*
@@ -32,47 +33,48 @@ Navigate to **Settings > Metadata Catalog** in your DataOculus dashboard to acce
 DataOculus supports integration with the following data catalog platforms:
 
 ### ✅ **Fully Supported**
-- **Google Data Catalog** - Enterprise data discovery and metadata management
-- **DataHub** - Open-source metadata platform by LinkedIn
+- **Google Data Catalog** - Enterprise data discovery and metadata management for all your Google Cloud data assets
+- **DataHub** - Open-source metadata platform from LinkedIn
 - **OpenMetadata** - Open-source data discovery and collaboration platform
-- **Kaggle Data Catalog** - Access Kaggle's public datasets
-- **Unity Data Catalog** - Databricks' unified governance solution
+- **Kaggle Data Catalog** - Kaggle's public datasets
+- **Unity Data Catalog** - Unified Data Catalog from Databricks
 
 ### 🚧 **Coming Soon**
 - **Azure Data Catalog** - Microsoft's data discovery service
 - **AWS Data Catalog** - Amazon's metadata management service
 
-## Adding a New Catalog Configuration
+## ⚙️ Setting Up a New Catalog Integration
 
-### Step 1: Start Configuration
+### Step 1: Start a New Configuration
 
-Click the **"Add New Configuration"** button to begin setting up a new catalog integration.
+To begin, click the **Add New Configuration** button located on your catalog interface.
 
-![Add New Configuration](./images/add-new-config.png)
-*Add new configuration button in the catalog interface*
+*Screenshot: "Add New Configuration" button*
 
-### Step 2: Select Catalog Provider
+### Step 2: Select Your Catalog Provider
 
-Choose your catalog provider from the dropdown menu. Each provider has different configuration requirements.
+From the dropdown menu, select the catalog provider you wish to integrate. Each provider has unique settings you'll need to configure.
 
-![Provider Selection](./images/provider-selection.png)
-*Catalog provider selection dropdown with available options*
+![Provider Selection](./images/provider-selection.png)  
+*Dropdown showing available catalog providers*
 
-### Step 3: Configure Provider Settings
+### Step 3: Enter Provider-Specific Settings
 
-Each catalog provider requires specific configuration parameters:
+After selecting a provider, fill out the configuration form displayed. Settings vary depending on your chosen provider. For example:
 
-#### Google Data Catalog
-![Google Data Catalog Config](./images/google-catalog-config.png)
-*Google Data Catalog configuration form*
+#### 🔹 Google Data Catalog Configuration
 
-**Required Fields:**
-- **Project ID** - Your Google Cloud project identifier
-- **Project Location** - Geographic location of your project
-- **Service Account Key** - JSON service account credentials (stored securely)
+[//]: # (![Google Data Catalog Config]&#40;./images/google-catalog-config.png&#41;)
+
+Fill out the following required fields:
+
+- **Project ID:** Identifier of your Google Cloud project.
+- **Project Location:** The geographic location associated with your project.
+- **Service Account Key:** Upload the JSON credentials for your service account. *(Credentials are securely stored.)*
 
 #### DataHub
-![DataHub Config](./images/datahub-config.png)
+
+[//]: # (![DataHub Config]&#40;./images/datahub-config.png&#41;)
 *DataHub configuration form*
 
 **Required Fields:**
@@ -80,7 +82,8 @@ Each catalog provider requires specific configuration parameters:
 
 
 #### Unity Data Catalog (Databricks)
-![Unity Catalog Config](./images/unity-catalog-config.png)
+
+[//]: # (![Unity Catalog Config]&#40;./images/unity-catalog-config.png&#41;)
 *Unity Data Catalog configuration form*
 
 **Required Fields:**
@@ -89,7 +92,8 @@ Each catalog provider requires specific configuration parameters:
 - **Personal Access Token** - Databricks PAT (stored securely as secret)
 
 #### Kaggle Data Catalog
-![Kaggle Config](./images/kaggle-config.png)
+
+[//]: # (![Kaggle Config]&#40;./images/kaggle-config.png&#41;)
 *Kaggle Data Catalog configuration form*
 
 **Required Fields:**
@@ -100,7 +104,7 @@ Each catalog provider requires specific configuration parameters:
 
 For sensitive fields like API keys and tokens, DataOculus provides secure secret storage:
 
-![Secret Management](./images/secret-management.png)
+[//]: # (![Secret Management]&#40;./images/secret-management.png&#41;)
 *Secure secret input and storage interface*
 
 1. Enter your secret value in the input field
@@ -114,7 +118,7 @@ For sensitive fields like API keys and tokens, DataOculus provides secure secret
 
 All configured catalog providers are displayed in an organized table with the following information:
 
-![Configuration Table](./images/configuration-table.png)
+![Configuration Table](./images/catalog-list.png)
 *Table showing all configured catalog providers with status and actions*
 
 **Columns:**
@@ -128,7 +132,7 @@ All configured catalog providers are displayed in an organized table with the fo
 
 DataOculus provides real-time status updates for all catalog sync operations:
 
-![Status Indicators](./images/status-indicators.png)
+[//]: # (![Status Indicators]&#40;./images/status-indicators.png&#41;)
 *Different status indicators for catalog sync operations*
 
 **Status Types:**
@@ -145,7 +149,7 @@ DataOculus provides real-time status updates for all catalog sync operations:
 
 Configure recurring sync schedules using the visual cron editor:
 
-![Cron Scheduler](./images/cron-scheduler.png)
+[//]: # (![Cron Scheduler]&#40;./images/cron-scheduler.png&#41;)
 *Visual cron expression editor for scheduling automated syncs*
 
 **Common Schedule Patterns:**
