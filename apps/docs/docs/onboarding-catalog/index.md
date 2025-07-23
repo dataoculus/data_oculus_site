@@ -8,6 +8,7 @@ Bring your own data catalog to start monitoring assets.
 DataOculus provides a user-friendly interface to configure, manage, and monitor all your data catalog assets at one place.
 
 ![Data Catalog Overview](./images/catalog-overview.png)
+
 *DataOculus Metadata Catalog dashboard showing all configured catalog providers*
 
 ## Overview
@@ -25,7 +26,7 @@ The DataOculus catalog management interface provides:
 
 Navigate to **Settings > Metadata Catalog** in your DataOculus dashboard to access the catalog management interface.
 
-![Catalog Management Interface](./images/catalog-interface.png)
+![Catalog Management Interface](./images/catalog-list.png)
 *Main catalog management interface with existing configurations*
 
 ## Supported Catalog Providers
