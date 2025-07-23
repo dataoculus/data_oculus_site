@@ -36,7 +36,7 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            "https://github.com/dataoculus/data_oculus_site/tree/main/apps/docs/blog",
+            "https://github.com/dataoculus/data_oculus_site/tree/main/apps/docs",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
