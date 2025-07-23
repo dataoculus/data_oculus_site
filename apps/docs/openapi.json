@@ -711,7 +711,7 @@
                 }
             }
         },
-        "/v1/datacontract/{id}": {
+        "/v1/datacontract/id": {
             "get": {
                 "tags": [
                     "Data Contract"
@@ -927,7 +927,7 @@
                 }
             }
         },
-        "/v1/datacontract/{id}/latest_status": {
+        "/v1/datacontract/id/latest_status": {
             "get": {
                 "tags": [
                     "Data Contract"
@@ -972,7 +972,7 @@
                 }
             }
         },
-        "/v1/dataError/{id}": {
+        "/v1/dataError/id": {
             "delete": {
                 "tags": [
                     "DataError"
@@ -1361,7 +1361,7 @@
                 }
             }
         },
-        "/v1/database/{id}": {
+        "/v1/database/id": {
             "get": {
                 "tags": [
                     "Database"
@@ -1396,7 +1396,7 @@
                         "description": "No database found for the given ID."
                     },
                     "404": {
-                        "description": "Database for instance {id} is not found."
+                        "description": "Database for instance id is not found."
                     },
                     "401": {
                         "description": "Unauthorized access."
@@ -1450,7 +1450,7 @@
                 }
             }
         },
-        "/v1/database/{id}/datasets": {
+        "/v1/database/id/datasets": {
             "get": {
                 "tags": [
                     "Database"
@@ -1482,7 +1482,7 @@
                         }
                     },
                     "404": {
-                        "description": "Database for instance {id} is not found."
+                        "description": "Database for instance id is not found."
                     },
                     "401": {
                         "description": "Unauthorized access."
@@ -1493,7 +1493,7 @@
                 }
             }
         },
-        "/v1/dataset/{id}/cleanup-and-re-run-job": {
+        "/v1/dataset/id/cleanup-and-re-run-job": {
             "delete": {
                 "tags": [
                     "Dataset"
@@ -1532,7 +1532,7 @@
                         }
                     },
                     "404": {
-                        "description": "error cleaning job execution for datasetId {id}"
+                        "description": "error cleaning job execution for datasetId id"
                     }
                 }
             }
@@ -1702,7 +1702,7 @@
                 }
             }
         },
-        "/v1/dataset/{id}": {
+        "/v1/dataset/id": {
             "get": {
                 "tags": [
                     "Dataset"
@@ -1733,7 +1733,7 @@
                         }
                     },
                     "404": {
-                        "description": "Dataset for instance {id} is not found"
+                        "description": "Dataset for instance id is not found"
                     }
                 }
             },
@@ -1760,12 +1760,12 @@
                         "description": "OK"
                     },
                     "404": {
-                        "description": "Dataset for instance {id} is not found"
+                        "description": "Dataset for instance id is not found"
                     }
                 }
             }
         },
-        "/v1/dataset/{id}/cleanup_bad_job_and_metrics": {
+        "/v1/dataset/id/cleanup_bad_job_and_metrics": {
             "delete": {
                 "tags": [
                     "Dataset"
@@ -1805,7 +1805,7 @@
                         "description": "OK"
                     },
                     "404": {
-                        "description": "Dataset for instance {id} is not found"
+                        "description": "Dataset for instance id is not found"
                     }
                 }
             }
@@ -1830,12 +1830,12 @@
                         }
                     },
                     "404": {
-                        "description": "Dataset for instance {id} is not found"
+                        "description": "Dataset for instance id is not found"
                     }
                 }
             }
         },
-        "/v1/dataset/{id}/{colName}/{aggOrIncr}/missingmap": {
+        "/v1/dataset/id/{colName}/{aggOrIncr}/missingmap": {
             "get": {
                 "tags": [
                     "Dataset"
@@ -1948,12 +1948,12 @@
                         }
                     },
                     "404": {
-                        "description": "Dataset for instance {id} is not found"
+                        "description": "Dataset for instance id is not found"
                     }
                 }
             }
         },
-        "/v1/dataset/{id}/metrics/profile/aggregated/columns": {
+        "/v1/dataset/id/metrics/profile/aggregated/columns": {
             "get": {
                 "tags": [
                     "Dataset"
@@ -1995,7 +1995,7 @@
                 }
             }
         },
-        "/v1/dataset/{id}/metrics/profile/aggregated/columns/{colName}": {
+        "/v1/dataset/id/metrics/profile/aggregated/columns/{colName}": {
             "get": {
                 "tags": [
                     "Dataset"
@@ -2045,7 +2045,7 @@
                 }
             }
         },
-        "/v1/dataset/{id}/metrics/profile/incr/columns": {
+        "/v1/dataset/id/metrics/profile/incr/columns": {
             "get": {
                 "tags": [
                     "Dataset"
@@ -2105,7 +2105,7 @@
                 }
             }
         },
-        "/v1/dataset/{id}/metrics/profile/incr/columns/{colName}": {
+        "/v1/dataset/id/metrics/profile/incr/columns/{colName}": {
             "get": {
                 "tags": [
                     "Dataset"
@@ -2173,7 +2173,7 @@
                 }
             }
         },
-        "/v1/dataset/{datasetId}/alerts": {
+        "/v1/dataset/datasetId/alerts": {
             "get": {
                 "tags": [
                     "Dataset"
@@ -2232,12 +2232,12 @@
                         }
                     },
                     "404": {
-                        "description": "Dataset for instance {datasetId} is not found"
+                        "description": "Dataset for instance datasetId is not found"
                     }
                 }
             }
         },
-        "/v1/dataset/{id}/metrics/profile/aggregated/dataset": {
+        "/v1/dataset/id/metrics/profile/aggregated/dataset": {
             "get": {
                 "tags": [
                     "Dataset"
@@ -2279,7 +2279,7 @@
                 }
             }
         },
-        "/v1/dataset/{id}/metrics/profile/incr/dataset": {
+        "/v1/dataset/id/metrics/profile/incr/dataset": {
             "get": {
                 "tags": [
                     "Dataset"
@@ -2340,7 +2340,7 @@
                 }
             }
         },
-        "/v1/dataset/{id}/{colName}/missing_value_image": {
+        "/v1/dataset/id/{colName}/missing_value_image": {
             "get": {
                 "tags": [
                     "Dataset"
@@ -2427,7 +2427,7 @@
                 }
             }
         },
-        "/v1/dataset/{id}/monitoredChunks": {
+        "/v1/dataset/id/monitoredChunks": {
             "get": {
                 "tags": [
                     "Dataset"
@@ -2506,7 +2506,7 @@
                 }
             }
         },
-        "/v1/dataset/{datasetId}/platform_errors": {
+        "/v1/dataset/datasetId/platform_errors": {
             "get": {
                 "tags": [
                     "Dataset"
@@ -2563,12 +2563,12 @@
                         }
                     },
                     "404": {
-                        "description": "Dataset for instance {datasetId} is not found"
+                        "description": "Dataset for instance datasetId is not found"
                     }
                 }
             }
         },
-        "/v1/dataset/{id}/{colName}/histogram": {
+        "/v1/dataset/id/{colName}/histogram": {
             "get": {
                 "tags": [
                     "Dataset"
@@ -2641,7 +2641,7 @@
                 }
             }
         },
-        "/v1/dataset/{id}/{colName}/missingmap": {
+        "/v1/dataset/id/{colName}/missingmap": {
             "get": {
                 "tags": [
                     "Dataset"
@@ -2782,7 +2782,7 @@
                 }
             }
         },
-        "/v1/dataset/{id}/quality_score_config": {
+        "/v1/dataset/id/quality_score_config": {
             "put": {
                 "tags": [
                     "Dataset"
@@ -2822,12 +2822,12 @@
                         }
                     },
                     "404": {
-                        "description": "failed to set quality score measurement configuration for datasetId {id}"
+                        "description": "failed to set quality score measurement configuration for datasetId id"
                     }
                 }
             }
         },
-        "/v1/dataset/{id}/watermark": {
+        "/v1/dataset/id/watermark": {
             "put": {
                 "tags": [
                     "Dataset"
@@ -2880,7 +2880,7 @@
                         }
                     },
                     "404": {
-                        "description": "datasetId {id} not found"
+                        "description": "datasetId id not found"
                     }
                 }
             }
@@ -3009,7 +3009,7 @@
                 }
             }
         },
-        "/v1/datastore/{id}": {
+        "/v1/datastore/id": {
             "get": {
                 "tags": [
                     "Datastore"
@@ -3039,7 +3039,7 @@
                         }
                     },
                     "404": {
-                        "description": "datastore for given instance {id} is not found"
+                        "description": "datastore for given instance id is not found"
                     }
                 }
             }
@@ -3074,7 +3074,7 @@
                         }
                     },
                     "404": {
-                        "description": "datastore for instance {id} is not found"
+                        "description": "datastore for instance id is not found"
                     }
                 }
             }
@@ -3245,7 +3245,7 @@
                 }
             }
         },
-        "/v1/domain/{id}": {
+        "/v1/domain/id": {
             "get": {
                 "tags": [
                     "Domain"
@@ -3354,7 +3354,7 @@
                 }
             }
         },
-        "/v1/jobError/{id}": {
+        "/v1/jobError/id": {
             "delete": {
                 "tags": [
                     "JobError"
@@ -3761,7 +3761,7 @@
                 ],
                 "responses": {
                     "200": {
-                        "description": "Job found for the given dataset ID {datasetId}",
+                        "description": "Job found for the given dataset ID datasetId",
                         "content": {
                             "application/json": {
                                 "schema": {
@@ -3771,7 +3771,7 @@
                         }
                     },
                     "404": {
-                        "description": "No job found for the specified dataset ID {datasetId}",
+                        "description": "No job found for the specified dataset ID datasetId",
                         "content": {
                             "application/json": {
                                 "schema": {
@@ -3882,7 +3882,7 @@
                 ],
                 "responses": {
                     "200": {
-                        "description": "Job status updated successfully for dataset ID {datasetId}",
+                        "description": "Job status updated successfully for dataset ID datasetId",
                         "content": {
                             "application/json": {
                                 "schema": {
@@ -3892,7 +3892,7 @@
                         }
                     },
                     "404": {
-                        "description": "No job found for the specified dataset ID {datasetId}",
+                        "description": "No job found for the specified dataset ID datasetId",
                         "content": {
                             "application/json": {
                                 "schema": {
@@ -3917,7 +3917,7 @@
                 }
             }
         },
-        "/v1/profileTask/{id}/status": {
+        "/v1/profileTask/id/status": {
             "put": {
                 "tags": [
                     "Data Profile Task"
@@ -4078,7 +4078,7 @@
                 }
             }
         },
-        "/v1/profileTask/{id}": {
+        "/v1/profileTask/id": {
             "get": {
                 "tags": [
                     "Data Profile Task"
@@ -4235,7 +4235,7 @@
                 }
             }
         },
-        "/v1/qualityTask/{id}/status": {
+        "/v1/qualityTask/id/status": {
             "put": {
                 "tags": [
                     "Data Quality Task"
@@ -4383,7 +4383,7 @@
                 }
             }
         },
-        "/v1/qualityTask/{id}": {
+        "/v1/qualityTask/id": {
             "get": {
                 "tags": [
                     "Data Quality Task"
@@ -4536,7 +4536,7 @@
                 }
             }
         },
-        "/v1/ruleTask/{id}/status": {
+        "/v1/ruleTask/id/status": {
             "put": {
                 "tags": [
                     "Rule Task"
@@ -4646,7 +4646,7 @@
                 }
             }
         },
-        "/v1/ruleTask/{id}": {
+        "/v1/ruleTask/id": {
             "get": {
                 "tags": [
                     "Rule Task"
@@ -5449,7 +5449,7 @@
                 }
             }
         },
-        "/v1/user/{id}": {
+        "/v1/user/id": {
             "get": {
                 "tags": [
                     "User"

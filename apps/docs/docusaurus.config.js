@@ -9,14 +9,14 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "DataOculus",
-  tagline: "Your Complete Data Management Platform",
-  url: "https://your-dataoculus-site.com",
+  tagline: "Real-Time Data Observability Platform",
+  url: "https://dataoculus.app",
   baseUrl: "/docs/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "dataoculus", // Usually your GitHub org/user name.
-  projectName: "data-oculus-docs", // Usually your repo name.
+  projectName: "data_oculus_site", // Usually your repo name.
   presets: [
     [
       "docusaurus-preset-openapi",
@@ -27,7 +27,7 @@ const config = {
           routeBasePath: "/",
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/dataoculus/data_oculus_site",
         },
         api: {
           path: 'openapi.json',
@@ -36,7 +36,7 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/dataoculus/data_oculus_site/tree/main/apps/docs/blog",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -141,7 +141,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} DataOculus. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} DataOculus.`,
       },
       prism: {
         theme: prismThemes.github,

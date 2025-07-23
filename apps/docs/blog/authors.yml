@@ -1,17 +1,11 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+DataOculus:
+  name: Data Oculus
+  title: Founder Data Oculus
+  url: https://github.com/dataoculus
+  image_url: https://github.com/dataoculus.png
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
-
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+JaySen:
+  name: Jay Sen
+  title: Engineer
+  url: https://github.com/jhsenjaliya
+  image_url: https://github.com/jhsenjaliya.png
